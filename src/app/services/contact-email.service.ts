@@ -15,19 +15,30 @@ export class ContactEmailService {
   constructor(private http: HttpClient) { }
 
 
+  private serverAPI = "http://localhost:4200/"
   // private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
-  private serverAPI = "https://75d690e8-1fb1-4482-b4f7-6b04af4c31f7.mock.pstmn.io/wee"
-  private body = {
-    "body": {
-      "name": "Biggs Mcgee",
-      "email": "farhan.t.islam",
-      "message": "I like this idea"
+
+
+
+
+  public postContact(name,email,message) {
+
+    const body = JSON.stringify({
+      "body": {
+        "name": name,
+        "email": "farhan.t.islam",
+        "message": "I HATE this idea"
+      }
+    });
+
+    const options = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
     }
-  }
+
+    return this.http.post<any[]>(this.serverAPI, body, options);
 
 
-  public postContact() {
-    console.log(this.http.post(this.serverAPI, this.body))
-    return this.http.post(this.serverAPI, this.body);
   }
 }

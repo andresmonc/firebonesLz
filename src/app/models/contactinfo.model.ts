@@ -1,3 +1,5 @@
 export interface contactInfo {
-    hey: string;
+    name: string;
+    email: string;
+    message: string;
 }
