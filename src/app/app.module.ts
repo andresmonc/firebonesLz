@@ -5,15 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { WINDOW_PROVIDERS } from "./services/window.service";
+import { ContactComponent } from './contact/contact.component';
+
+
+import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule, 
+    HttpClientModule
   ],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]

@@ -10,7 +10,6 @@ import { WINDOW } from "../services/window.service";
 })
 export class ProgressBarComponent implements OnInit {
 
-  public navIsFixed: boolean = false;
   public section1: boolean = true;
   public section2: boolean = false;
   public section3: boolean = false;

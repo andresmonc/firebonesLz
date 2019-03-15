@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EmailSenderService } from './email-sender.service';
+import { ContactEmailService } from './contact-email.service';
 
-describe('EmailSenderService', () => {
+describe('ContactEmailService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: EmailSenderService = TestBed.get(EmailSenderService);
+    const service: ContactEmailService = TestBed.get(ContactEmailService);
     expect(service).toBeTruthy();
   });
 });
