@@ -7,13 +7,18 @@ import { contactInfo } from '../models/contactinfo.model'
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+  public contactinfo: Array<contactInfo>;
   constructor(private contactServ: ContactEmailService) { }
   public contactInfo: contactInfo[];
   ngOnInit() {
-    this.contactServ.postContact.subscribe(response => this.contactInfo = response)
+    this.contactServ.postContact().subscribe((res) => {
+      this.contactinfo = res;
+      console.log(res);
+    });
   }
 
+
+  postEmail
 
 
 }
