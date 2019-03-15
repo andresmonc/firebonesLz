@@ -62,3 +62,4 @@ typings/
 
 # prod build
 public/
+.firebase/
