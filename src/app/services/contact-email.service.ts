@@ -13,8 +13,6 @@ export class ContactEmailService {
   // private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
 
 
-
-
   public postContact(name, email, message) {
 
     const body = JSON.stringify({
