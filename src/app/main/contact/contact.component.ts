@@ -7,16 +7,21 @@ import { contactInfo } from '../../models/contactinfo.model'
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+
+  name: string;
+  email: string;
+  message: string;
+
   public contactinfo: Array<contactInfo>;
   constructor(private contactServ: ContactEmailService) { }
 
   ngOnInit() {
-    this.sendEmail("Jaime Moncayo","jaimeamonc@gmail.com","hey how do you do"); //a sample function call
+    //this.sendEmail("Jaime Moncayo","jaimeamonc@gmail.com","hey how do you do"); //a sample function call
   }
 
 
-  sendEmail(name,email,message) {
-    this.contactServ.postContact(name,email,message).subscribe((res) => {
+  sendEmail() {
+    this.contactServ.postContact(this.name,this.email,this.message).subscribe((res) => {
       this.contactinfo = res;
       console.log(res); 
     });
