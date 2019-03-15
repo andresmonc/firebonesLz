@@ -1,11 +1,5 @@
 import { Injectable } from '@angular/core';
-
-import { Observable } from 'rxjs';
-
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { contactInfo } from '../models/contactinfo.model';
-import { map } from 'rxjs/operators'
-import { Body } from '@angular/http/src/body';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -19,26 +13,16 @@ export class ContactEmailService {
   // private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
 
 
-
-
-  public postContact(name,email,message) {
+  public postContact(name, email, message) {
 
     const body = JSON.stringify({
       "body": {
         "name": name,
-        "email": "farhan.t.islam",
-        "message": "I HATE this idea"
+        "email": email,
+        "message": message
       }
     });
-
-    const options = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    }
-
-    return this.http.post<any[]>(this.serverAPI, body, options);
-
+    return this.http.post<any[]>(this.serverAPI, body);
 
   }
 }
