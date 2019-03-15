@@ -1,0 +1,13 @@
+.oval {
+    width: 25px;
+    height: 30vh;
+    background-color: rgba(0, 0, 0,.8);
+    opacity: 1;
+    border-radius: 9999px;
+    position: fixed;
+    top: 30vw;
+}
+
+.circle{
+    
+}
