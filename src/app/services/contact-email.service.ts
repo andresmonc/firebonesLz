@@ -17,21 +17,28 @@ export class ContactEmailService {
 
   private serverAPI = "http://localhost:4200/"
   // private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
-  private body = JSON.stringify({
-    "body": {
-      "name": "Biggs Mcgee",
-      "email": "farhan.t.islam",
-      "message": "I like this idea"
+
+
+
+
+  public postContact(name,email,message) {
+
+    const body = JSON.stringify({
+      "body": {
+        "name": name,
+        "email": "farhan.t.islam",
+        "message": "I HATE this idea"
+      }
+    });
+
+    const options = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
     }
-  });
 
-  private options = {
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json'
-    })
-  }
+    return this.http.post<any[]>(this.serverAPI, body, options);
 
-  public postContact() {
-    return this.http.post<any[]>(this.serverAPI, this.body, this.options);
+
   }
 }
