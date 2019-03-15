@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Inject } from "@angular/core";
 import { DOCUMENT } from "@angular/platform-browser";
-import { WINDOW } from "../services/window.service";
+import { WINDOW } from "../../services/window.service";
 
 @Component({
   selector: 'app-progress-bar',
