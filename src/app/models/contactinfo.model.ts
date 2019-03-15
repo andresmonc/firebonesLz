@@ -1,3 +1,3 @@
 export interface contactInfo {
-    result: string
+    statusCode: number;
 }

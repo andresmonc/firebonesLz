@@ -11,8 +11,9 @@ export class ContactComponent implements OnInit {
   name: string;
   email: string;
   message: string;
+  formSubmitted: boolean = false;
+  formSuccess: boolean = false;
 
-  public contactinfo: Array<contactInfo>;
   constructor(private contactServ: ContactEmailService) { }
 
   ngOnInit() {
@@ -22,8 +23,12 @@ export class ContactComponent implements OnInit {
 
   sendEmail() {
     this.contactServ.postContact(this.name,this.email,this.message).subscribe((res) => {
-      this.contactinfo = res;
+      this.formSubmitted = true; 
+      console.log(this.formSubmitted)
       console.log(res); 
+      if(res.statusCode == 200){
+        this.formSuccess = true;
+      }
     });
   }
 

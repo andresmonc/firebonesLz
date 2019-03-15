@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { contactInfo } from "../models/contactinfo.model"
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,7 @@ export class ContactEmailService {
         "message": message
       }
     });
-    return this.http.post<any[]>(this.serverAPI, body);
+    return this.http.post<contactInfo>(this.serverAPI, body);
 
   }
 }
