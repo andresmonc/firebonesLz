@@ -9,15 +9,16 @@ import { contactInfo } from '../models/contactinfo.model'
 export class ContactComponent implements OnInit {
   public contactinfo: Array<contactInfo>;
   constructor(private contactServ: ContactEmailService) { }
-  public contactInfo: contactInfo[];
-  ngOnInit() {
 
+  ngOnInit() {
+    this.sendEmail("Jaime Moncayo","jaimeamonc@gmail.com","hey how do you do");
   }
 
 
-  sendEmail() {
-    this.contactServ.postContact("name", "email", "message").subscribe((res) => {
-      this.contactinfo = res;
+  sendEmail(name,email,message) {
+    this.contactServ.postContact(name,email,message).subscribe((res) => {
+      // this.contactinfo = res;
+      console.log(res);
     });
   }
 
