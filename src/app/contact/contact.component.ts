@@ -11,14 +11,14 @@ export class ContactComponent implements OnInit {
   constructor(private contactServ: ContactEmailService) { }
 
   ngOnInit() {
-    this.sendEmail("Jaime Moncayo","jaimeamonc@gmail.com","hey how do you do");
+    this.sendEmail("Jaime Moncayo","jaimeamonc@gmail.com","hey how do you do"); //a sample function call
   }
 
 
   sendEmail(name,email,message) {
     this.contactServ.postContact(name,email,message).subscribe((res) => {
-      // this.contactinfo = res;
-      console.log(res);
+      this.contactinfo = res;
+      console.log(res); 
     });
   }
 
