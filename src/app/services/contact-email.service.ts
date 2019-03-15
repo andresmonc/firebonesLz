@@ -9,8 +9,8 @@ export class ContactEmailService {
   constructor(private http: HttpClient) { }
 
 
-  private serverAPI = "http://localhost:4200/"
-  // private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
+  //private serverAPI = "http://localhost:4200/"
+  private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
 
 
   public postContact(name, email, message) {
