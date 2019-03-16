@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AudioComponent implements OnInit {
 
-  constructor() { }
+  private hidden: boolean = true;
+
+  constructor(
+
+  ) { }
+
+
 
   ngOnInit() {
+
+
   }
 
 }
