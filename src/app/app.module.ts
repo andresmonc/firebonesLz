@@ -15,6 +15,7 @@ import { AboutComponent } from './main/about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { AudioComponent } from './main/audio/audio.component';
 import { VideoComponent } from './main/video/video.component';
+import { SubscribeComponent } from './main/subscribe/subscribe.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { VideoComponent } from './main/video/video.component';
     AboutComponent,
     FooterComponent,
     AudioComponent,
-    VideoComponent
+    VideoComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,28 @@
-<form *ngIf="!formSuccess" (ngSubmit)="sendEmail()" #emailForm="ngForm">
+<div id="contact">
+  <form *ngIf="!formSuccess" (ngSubmit)="sendEmail()" #emailForm="ngForm">
     <div class="form-group field">
-        <label for="exampleInputEmail1">Email</label>
-        <input type="email"  name="name" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email" [(ngModel)]="name" required>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <label for="exampleInputEmail1">Email</label>
+      <input type="email" name="name" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Your email" [(ngModel)]="name" required>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group field">
-        <label for="exampleInputPassword1">Name</label>
-        <input type="text" name="email" class="form-control input" id="exampleInputPassword1" placeholder="Your name" [(ngModel)]="email" required>
+      <label for="exampleInputPassword1">Name</label>
+      <input type="text" name="email" class="form-control input" id="exampleInputPassword1" placeholder="Your name"
+        [(ngModel)]="email" required>
     </div>
     <div class="form-group field">
-        <label for="exampleFormControlTextarea1">Message</label>
-        <textarea class="form-control input" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Shoot us a message!" [(ngModel)]="message" required></textarea>
+      <label for="exampleFormControlTextarea1">Message</label>
+      <textarea class="form-control input" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Shoot us a message!"
+        [(ngModel)]="message" required></textarea>
     </div>
     <button type="submit" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Submit</button>
-</form>
+  </form>
 
 
-<div *ngIf="formSuccess" class="jumbotron jumbotron-fluid">
+  <div *ngIf="formSuccess" class="jumbotron jumbotron-fluid">
     <div class="container">
-        <p class="lead">Your message has been sent!</p>
+      <p class="lead">Your message has been sent!</p>
     </div>
+  </div>
 </div>
-
