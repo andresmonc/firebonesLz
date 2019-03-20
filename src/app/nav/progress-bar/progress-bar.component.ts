@@ -10,32 +10,51 @@ import { WINDOW } from "../../services/window.service";
 })
 export class ProgressBarComponent implements OnInit {
 
-  public section1: boolean = true;
-  public section2: boolean = false;
-  public section3: boolean = false;
+  private section1: boolean = true;
+  private section2: boolean = false;
+  private section3: boolean = false;
+  private section4: boolean = false;
+  private section5: boolean = false;
+
+  private aboutOffset: number
+  private videoOffset: number;
+  private audioOffset: number;
+
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject(WINDOW) private window: Window
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() { 
+    this.videoOffset = (this.document.getElementById('videoSample').offsetTop);
+    this.audioOffset = (this.document.getElementById('audioSample').offsetTop);
+    this.aboutOffset = (this.document.getElementById('about').offsetTop);
+  }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
     let number = this.window.pageYOffset || this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
-    console.log(Math.round(number))
-    if (number < 1271) {
+    console.log("Current scroll Pos:" + Math.round(number));
+    console.log('about offset: ' + this.aboutOffset)
+    console.log('audio offset: ' + this.audioOffset)
+    console.log('video offset: ' + this.videoOffset)
+    console.log('about offset: ' + this.aboutOffset)
+    console.log('contact offset: ' + this.aboutOffset)
+    // console.log(number - videoOffset)
+    if (number == this.videoOffset -200) {
       this.section1 = true;
       this.section2 = false;
       this.section3 = false;
-    } else if(number > 1271 && number < 2144) {
-      this.section1 = false;
-      this.section2 = true;
-      this.section3 = false;
-    } else if(number > 2144) {
-      this.section1 = false;
+      this.section4 = false;
+      this.section5 = false;
+    }
+    if (number == this.videoOffset -200) {
+      this.section1 = true;
       this.section2 = false;
-      this.section3 = true;
+      this.section3 = false;
+      this.section4 = false;
+      this.section5 = false;
     }
   }
 
