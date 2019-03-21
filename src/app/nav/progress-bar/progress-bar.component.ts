@@ -32,12 +32,12 @@ export class ProgressBarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // the - 200 is to trigger 200 pixels before element reaches top
+
     this.videoOffset = (this.document.getElementById('videoSample').offsetTop) - this.triggerBeforeElem;
     this.audioOffset = (this.document.getElementById('audioSample').offsetTop) - this.triggerBeforeElem;
     this.aboutOffset = (this.document.getElementById('about').offsetTop) - this.triggerBeforeElem;
     this.subscribeOffset = (this.document.getElementById('subscribe').offsetTop) - this.triggerBeforeElem;
-    this.contactOffset = (this.document.getElementById('contact').offsetTop) - this.triggerBeforeElem - 200 ;
+    this.contactOffset = (this.document.getElementById('contact').offsetTop) - this.triggerBeforeElem ;
 
   }
 
@@ -78,17 +78,17 @@ export class ProgressBarComponent implements OnInit {
     else if (number >= this.subscribeOffset && number <= this.contactOffset) {
       this.section1 = false;
       this.section2 = false;
-      this.section3 = true;
-      this.section4 = false;
+      this.section3 = false;
+      this.section4 = true;
       this.section5 = false;
       console.log('trigger 4!!!');
     }
     else if (number >= this.contactOffset) {
       this.section1 = false;
       this.section2 = false;
-      this.section3 = true;
+      this.section3 = false;
       this.section4 = false;
-      this.section5 = false;
+      this.section5 = true;
       console.log('trigger 5!!!');
     }
   }
