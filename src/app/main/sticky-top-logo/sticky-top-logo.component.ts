@@ -24,11 +24,8 @@ export class StickyTopLogoComponent implements OnInit {
   onWindowScroll() {
       if (this.document.body.scrollTop > 80 || this.document.documentElement.scrollTop > 80) {
         this.document.getElementById("navbar").style.padding = "30px 10px";
-        this.document.getElementById("logo").style.fontSize = "25px";
-        
       } else {
         this.document.getElementById("navbar").style.padding = "80px 10px";
-        this.document.getElementById("logo").style.fontSize = "35px";
       }
     }
 
