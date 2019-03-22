@@ -1,10 +1,9 @@
-* {box-sizing: border-box;}
-
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
+
+* {box-sizing: border-box;}
 
 #logo{
     overflow: hidden;
-    transition: width 5s;
     z-index: 99;
     margin-right: auto;
     margin-left: auto;
@@ -25,7 +24,6 @@
   
   #navbar a {
     /* text-align: center; */
-    padding: 12px;
     font-size: 72px; 
     display:inline-block;
     font-family: 'Cormorant Garamond', serif;
@@ -33,14 +31,6 @@
 
   }
   
-  #navbar #logo {
-    font-size: 35px;
-    font-weight: bold;
-    transition: 0.4s;
-  }
-
-
-
   
   @media screen and (max-width: 580px) {
     #navbar {

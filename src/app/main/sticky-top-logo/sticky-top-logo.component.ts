@@ -22,21 +22,29 @@ export class StickyTopLogoComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-      if (this.document.body.scrollTop > 80 || this.document.documentElement.scrollTop > 80) {
-        this.document.getElementById("navbar").style.padding = "30px 10px";
+
+      if (this.document.body.scrollTop > 110 || this.document.documentElement.scrollTop > 110) {
+        this.document.getElementById("navbar").style.padding = "0px 10px";
         this.document.getElementById("navbar").style.backgroundColor = "black";
+        // this.document.getElementById("bones").style.marginRight = "-36%";
+        // this.document.getElementById("fire").style.marginLeft = "-36%";
         this.document.getElementById("navbar").style.color = "white";
         this.document.getElementById("logo").style.fontSize = "25px";
         this.document.getElementById("logo").style.height = "auto";
-        this.document.getElementById("logo").style.width = "130px";
+        this.document.getElementById("logo").style.transform =  'scale(' + (1 - 110 / 250) + ')'
+        this.document.getElementById("logo").style.webkitTransition = "all .5s ease";
+        this.document.getElementById("logo").style.transition = "all .5s ease";
         
       } else {
+        this.document.getElementById("logo").style.transform =  'scale(' + (1 - this.document.documentElement.scrollTop / 250) + ')'
         this.document.getElementById("navbar").style.padding = "10px 10px";
         this.document.getElementById("navbar").style.backgroundColor = "#f1f1f100";
         this.document.getElementById("navbar").style.color = "black";
         this.document.getElementById("logo").style.fontSize = "35px";
         this.document.getElementById("logo").style.height = "auto";
         this.document.getElementById("logo").style.width = "auto";
+        this.document.getElementById("logo").style.webkitTransition = "all .5s ease";
+        this.document.getElementById("logo").style.transition = "all .5s ease";
         
       }
 
