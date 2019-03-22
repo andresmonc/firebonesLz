@@ -24,15 +24,22 @@ export class StickyTopLogoComponent implements OnInit {
   onWindowScroll() {
       if (this.document.body.scrollTop > 80 || this.document.documentElement.scrollTop > 80) {
         this.document.getElementById("navbar").style.padding = "30px 10px";
+        this.document.getElementById("navbar").style.backgroundColor = "black";
+        this.document.getElementById("logo-right").style.color = "white";
+        this.document.getElementById("logo-left").style.color = "white";
         this.document.getElementById("logo").style.fontSize = "25px";
         this.document.getElementById("logo").style.height = "auto";
-        this.document.getElementById("logo").style.width = "200px";
+        this.document.getElementById("logo").style.width = "130px";
         
       } else {
-        this.document.getElementById("navbar").style.padding = "80px 10px";
+        this.document.getElementById("navbar").style.padding = "10px 10px";
+        this.document.getElementById("navbar").style.backgroundColor = "#f1f1f100";
+        this.document.getElementById("logo-right").style.color = "black";
+        this.document.getElementById("logo-left").style.color = "black";
         this.document.getElementById("logo").style.fontSize = "35px";
         this.document.getElementById("logo").style.height = "auto";
         this.document.getElementById("logo").style.width = "auto";
+        
       }
 
     }

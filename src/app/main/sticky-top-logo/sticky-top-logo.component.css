@@ -12,7 +12,7 @@
 
 #navbar {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #f1f1f100;
     padding: 90px 10px;
     transition: 0.4s;
     position: fixed;
@@ -23,7 +23,6 @@
   }
   
   #navbar a {
-    color: black;
     /* text-align: center; */
     padding: 12px;
     font-size: 18px; 
