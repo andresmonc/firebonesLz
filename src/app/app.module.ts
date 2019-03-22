@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AudioComponent } from './main/audio/audio.component';
 import { VideoComponent } from './main/video/video.component';
 import { SubscribeComponent } from './main/subscribe/subscribe.component';
+import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SubscribeComponent } from './main/subscribe/subscribe.component';
     FooterComponent,
     AudioComponent,
     VideoComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    StickyTopLogoComponent
   ],
   imports: [
     BrowserModule,
