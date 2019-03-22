@@ -5,11 +5,9 @@
     overflow: hidden;
     transition: width 5s;
     z-index: 99;
-    position: fixed;
-    right: 0;
-    left: 0;
     margin-right: auto;
     margin-left: auto;
+    display:inline-block;
 }
 
 #navbar {
@@ -21,17 +19,15 @@
     width: 100%;
     top: 0;
     z-index: 99;
+    text-align: center;
   }
   
   #navbar a {
-    float: left;
     color: black;
-    text-align: center;
+    /* text-align: center; */
     padding: 12px;
-    text-decoration: none;
     font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
+    display:inline-block;
   }
   
   #navbar #logo {
@@ -40,14 +36,14 @@
     transition: 0.4s;
   }
 
-  #navbar-right {
-    position: fixed;
-    left: 30%;
+  #logo-right {
+    float: right;
+    margin-right: 32%;
   }
 
-  #navbar-left {
-    position: fixed;
-    right: 30%;
+  #logo-left {
+    float: left;
+    margin-left: 32%;
   }
 
 
