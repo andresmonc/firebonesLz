@@ -11,11 +11,12 @@ export class ContactEmailService {
 
 
   //private serverAPI = "http://localhost:4200/"
-  private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default/fireBonesContactUs"
+  private serverAPI = "https://t2cxbnod53.execute-api.us-east-1.amazonaws.com/default"
 
 
   public postContact(name, email, message) {
 
+    const apiEndpoint = this.serverAPI + '/fireBonesContactUs'
     const body = JSON.stringify({
       "body": {
         "name": name,
@@ -23,7 +24,22 @@ export class ContactEmailService {
         "message": message
       }
     });
-    return this.http.post<contactInfo>(this.serverAPI, body);
+    return this.http.post<contactInfo>(apiEndpoint, body);
 
   }
+
+  public postSubscribe(email) {
+    const apiEndpoint = this.serverAPI + '/fireBonesSubscribe'
+    const body = JSON.stringify({
+      "body": {
+        "email": email
+      }
+    });
+    return this.http.post<contactInfo>(apiEndpoint, body);
+
+  }
+
+
+
+
 }
