@@ -1,4 +1,4 @@
-<ul id="pagination">
+<ul id="pagination" *ngIf="loadBar" [ngClass]="{'fadeOut': section1, 'fadeIn': !section1 }">
   <li [class.active-dot]="section1"><a href="#about"></a></li>
   <li [class.active-dot]="section2"><a href="#videoSample"></a></li>
   <li [class.active-dot]="section3"><a href="#audioSample"></a></li>

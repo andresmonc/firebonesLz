@@ -11,9 +11,7 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-
   list-style: none;
-
 }
 
 .active-dot {

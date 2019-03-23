@@ -16,14 +16,14 @@ export class ProgressBarComponent implements OnInit {
   private section4: boolean = false;
   private section5: boolean = false;
 
+
   private aboutOffset: number;
   private videoOffset: number;
   private audioOffset: number;
   private contactOffset: number;
   private subscribeOffset: number;
 
-  private endOfPage: number;
-
+  private loadBar: boolean = false;
   private triggerBeforeElem: number = 200;
 
   constructor(
@@ -32,48 +32,36 @@ export class ProgressBarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.videoOffset = (this.document.getElementById('videoSample').offsetTop) - this.triggerBeforeElem;
     this.audioOffset = (this.document.getElementById('audioSample').offsetTop) - this.triggerBeforeElem;
     this.aboutOffset = (this.document.getElementById('about').offsetTop) - this.triggerBeforeElem;
     this.subscribeOffset = (this.document.getElementById('subscribe').offsetTop) - this.triggerBeforeElem;
-    this.contactOffset = (this.document.getElementById('contact').offsetTop) - this.triggerBeforeElem ;
-
+    this.contactOffset = (this.document.getElementById('contact').offsetTop) - this.triggerBeforeElem;
   }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
     let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
-    // pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
-    console.log((number));
-    console.log(this.endOfPage);
-    console.log('about offset: ' + this.aboutOffset)
-    console.log('video offset: ' + this.videoOffset)
-    console.log('audio offset: ' + this.audioOffset)
-    console.log('subscribe offset: ' + this.subscribeOffset)
-    console.log('contact offset: ' + this.contactOffset)
-
     if (number >= this.aboutOffset && number <= this.videoOffset) {
       this.section1 = true;
       this.section2 = false;
       this.section3 = false;
       this.section4 = false;
       this.section5 = false;
-      console.log("trigger 1!");
     } else if (number >= this.videoOffset && number <= this.audioOffset) {
       this.section1 = false;
       this.section2 = true;
       this.section3 = false;
       this.section4 = false;
       this.section5 = false;
-      console.log('trigger 2!!!');
+      this.loadBar = true;
     } else if (number >= this.audioOffset && number <= this.subscribeOffset) {
       this.section1 = false;
       this.section2 = false;
       this.section3 = true;
       this.section4 = false;
       this.section5 = false;
-      console.log('trigger 3!!!');
+      this.loadBar = true;
     }
     else if (number >= this.subscribeOffset && number <= this.contactOffset) {
       this.section1 = false;
@@ -81,7 +69,7 @@ export class ProgressBarComponent implements OnInit {
       this.section3 = false;
       this.section4 = true;
       this.section5 = false;
-      console.log('trigger 4!!!');
+      this.loadBar = true;
     }
     else if (number >= this.contactOffset) {
       this.section1 = false;
@@ -89,7 +77,7 @@ export class ProgressBarComponent implements OnInit {
       this.section3 = false;
       this.section4 = false;
       this.section5 = true;
-      console.log('trigger 5!!!');
+      this.loadBar = true;
     }
   }
 
