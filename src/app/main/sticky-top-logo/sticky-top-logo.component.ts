@@ -6,7 +6,7 @@ import { WINDOW } from "../../services/window.service";
 @Component({
   selector: 'app-sticky-top-logo',
   templateUrl: './sticky-top-logo.component.html',
-  styleUrls: ['./sticky-top-logo.component.css']
+  styleUrls: ['./sticky-top-logo.component.scss']
 })
 export class StickyTopLogoComponent implements OnInit {
 
