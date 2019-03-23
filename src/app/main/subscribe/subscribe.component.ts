@@ -11,7 +11,7 @@ export class SubscribeComponent implements OnInit {
   constructor(private apiservice: apiReturnService) { }
 
   ngOnInit() {
-    this.sendEmail('THISISATEST@gmail.cdlafoda'); //sample
+   // this.sendEmail('THISISATEST@gmail.cdlafoda'); //sample
   }
 
   sendEmail(email) {
@@ -19,5 +19,5 @@ export class SubscribeComponent implements OnInit {
       console.log(res.statusCode);
     });
   }
-  
+
 }
