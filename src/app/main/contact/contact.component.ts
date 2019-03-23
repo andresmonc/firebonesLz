@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactEmailService } from '../../services/contact-email.service'
+import { ContactEmailService } from '../../services/API.service'
 import { contactInfo } from '../../models/contactinfo.model'
 @Component({
   selector: 'app-contact',
