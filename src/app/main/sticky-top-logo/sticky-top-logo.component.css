@@ -2,6 +2,10 @@
 
 * {box-sizing: border-box;}
 
+body{
+    
+}
+
 #logo{
     overflow: hidden;
     z-index: 99;
@@ -13,12 +17,11 @@
 #navbar {
     overflow: hidden;
     background-color: #f1f1f100;
-    padding: 10px 10px;
     transition: 0.4s;
     position: fixed;
-    width: 100%;
-    top: 0;
+    width: 65%;
     z-index: 99;
+    left:15%;
     text-align: center;
   }
   
@@ -28,6 +31,24 @@
     display:inline-block;
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
+
+
+  }
+
+  .fire{
+      margin-left: 36px;
+  }
+
+  .bringTextCloserRight{
+    margin-right: -75px;
+    transition: all .5s ease;
+    margin-bottom: 40%;
+
+  }
+
+  .bringTextCloserLeft{
+    margin-left: -75px;
+    transition: all .5s ease;
 
   }
   
