@@ -41,6 +41,7 @@ body{
   .bringTextCloserRight{
     margin-right: -75px;
     transition: all .5s ease;
+    letter-spacing: 10px;
     margin-bottom: 40%;
         -ms-transform: skewX(-10deg) rotate(-10deg);  /* IE 9 */
     -webkit-transform: skewX(-10deg) rotate(-10deg); /* Safari */
@@ -52,7 +53,8 @@ body{
   }
 
   .bringTextCloserLeft{
-    margin-left: -70px;
+    margin-left: -60px;
+    letter-spacing: 8px;
     transition: all .5s ease;
     -ms-transform: skewY(-5deg) rotate(10deg); /* IE 9 */
     -webkit-transform: skewY(-5deg) rotate(10deg); /* Safari */
