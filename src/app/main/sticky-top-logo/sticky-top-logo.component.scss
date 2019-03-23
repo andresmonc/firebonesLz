@@ -2,10 +2,6 @@
 
 * {box-sizing: border-box;}
 
-body{
-    
-}
-
 #logo{
     overflow: hidden;
     z-index: 99;
@@ -34,21 +30,15 @@ body{
     font-style: italic;
   }
 
-  .fire{
-      margin-left: 36px;
-  }
-
   .bringTextCloserRight{
     margin-right: -75px;
     transition: all .5s ease;
     letter-spacing: 10px;
     margin-bottom: 40%;
-        -ms-transform: skewX(-10deg) rotate(-10deg);  /* IE 9 */
+    -ms-transform: skewX(-10deg) rotate(-10deg);  /* IE 9 */
     -webkit-transform: skewX(-10deg) rotate(-10deg); /* Safari */
     transform: skewX(-10deg) rotate(-10deg); /* Standard syntax */
-    // -ms-transform: rotate(-10deg); /* IE 9 */
-    // -webkit-transform: rotate(10deg); /* Safari */
-    // transform: rotate(-10deg);
+
 
   }
 
@@ -59,22 +49,31 @@ body{
     -ms-transform: skewY(-5deg) rotate(10deg); /* IE 9 */
     -webkit-transform: skewY(-5deg) rotate(10deg); /* Safari */
     transform: scale(1.2) skewY(-5deg) rotate(10deg) ; /* Standard syntax */
-    // -ms-transform: rotate(10deg); /* IE 9 */
-    // -webkit-transform: rotate(10deg); /* Safari */
-    // transform: rotate(10deg);
   }
   
   
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 855px) {
+    
+    #logo{
+      width: 165px;
+    }
+    
     #navbar {
-      padding: 20px 10px !important;
+      width: 85%;
+      left:8%;
     }
+      
     #navbar a {
-      float: none;
-      display: block;
-      text-align: left;
+      font-size: 38px; 
     }
-    #navbar-right {
-      float: none;
+
+    .bringTextCloserRight{
+      margin-right: -50px;
     }
+
+    .bringTextCloserLeft{
+      margin-left: -37px;
+    }
+    
+    
   }
