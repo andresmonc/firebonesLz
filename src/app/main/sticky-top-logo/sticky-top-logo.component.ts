@@ -31,7 +31,7 @@ export class StickyTopLogoComponent implements OnInit {
         this.document.getElementById("navbar").style.height = "265px";
         this.document.getElementById("navbar").style.top = "-6%";
         this.document.getElementById("navbar").style.backgroundColor = "black";
-        this.document.getElementById("navbar").style.color = "white";
+        this.document.getElementById("navbar").style.color = "#f9dfbe";
         this.document.getElementById("logo").style.fontSize = "25px";
         this.document.getElementById("logo").style.height = "auto";
         this.document.getElementById("logo").style.transform =  'scale(' + (1 - 110 / 250) + ')'
