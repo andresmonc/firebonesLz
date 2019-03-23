@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { contactInfo } from "../models/contactinfo.model"
+import { apiReturn } from "../models/apiReturn"
 
 @Injectable({
   providedIn: 'root'
 })
-export class ContactEmailService {
+export class apiReturnService {
 
   constructor(private http: HttpClient) { }
 
@@ -24,18 +24,19 @@ export class ContactEmailService {
         "message": message
       }
     });
-    return this.http.post<contactInfo>(apiEndpoint, body);
+    return this.http.post<apiReturn>(apiEndpoint, body);
 
   }
 
   public postSubscribe(email) {
+    console.log('hifrom service')
     const apiEndpoint = this.serverAPI + '/fireBonesSubscribe'
     const body = JSON.stringify({
       "body": {
         "email": email
       }
     });
-    return this.http.post<contactInfo>(apiEndpoint, body);
+    return this.http.post<apiReturn>(apiEndpoint, body);
 
   }
 
