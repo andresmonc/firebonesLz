@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
+
 #videoSample{
     position:relative;
 }
 
 #drawnArrow{
     position:absolute;
-    width:17vw;
-    margin-top: -40%;
-    margin-left: 45%;
+    width:15vw;
+    margin-top: -39%;
+    margin-left: 52%;
     -moz-transform: rotate(-20deg) scaleX(-1);
     -o-transform: rotate(-20deg) scaleX(-1);
     -webkit-transform: rotate(-20deg) ßscaleX(-1);
@@ -15,12 +17,13 @@
 
 #watcherImage{
     position:relative;
+    margin-left:5%;
 }
 
 .pulse {
     position:absolute;
     margin-top: -39.1%;
-    margin-left: 39.1%;
+    margin-left: 44.14%;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -32,6 +35,9 @@
   }
   .pulse:hover {
     animation: none;
+    background: #c6636c;
+    opacity:.8;
+    
   }
   
   @-webkit-keyframes pulse {
@@ -55,4 +61,21 @@
       100% {
           -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0);
       }
+  }
+
+
+  h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    position:absolute;
+    margin-top: -48.5%;
+    margin-left: 61%;
+    font-size:120px;
+    -ms-transform: skewY(-5deg) rotate(10deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg) rotate(10deg); /* Safari */
+    transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; /* Standard syntax */
+  }
+
+  h1:hover {
+    color: #c6636c
   }
