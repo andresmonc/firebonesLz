@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url("https://s3-us-west-1.amazonaws.com/firebones-lz/paperPattern.png");
+}
+
 
 .av-image {
   width: 100%;
