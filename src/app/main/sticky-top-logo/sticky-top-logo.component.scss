@@ -17,7 +17,8 @@
     position: fixed;
     width: 65%;
     z-index: 99;
-    left:15%;
+    left:17.5%;
+    top:0;
     text-align: center;
     clip-path: polygon(0 0, 0 87%, 7% 93%, 17% 94%, 21% 99%, 30% 96%, 37% 100%, 45% 100%, 51% 96%, 60% 100%, 69% 98%, 77% 95%, 85% 96%, 100% 89%, 100% 0);
 }
@@ -53,14 +54,14 @@
   
   
   @media screen and (max-width: 855px) {
-    
+
     #logo{
       width: 165px;
     }
     
     #navbar {
       width: 85%;
-      left:8%;
+      left:8.5%;
     }
       
     #navbar a {
