@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700,700i');
 
 #about{
-    position:absolute;
-    margin-top: 18%;
+    position:relative;
+    margin-top: 17%;
     margin-left: 23%;
     margin-right: 23%;
     text-align: center;
@@ -11,10 +11,7 @@
 
 h1{
     font-weight: 900;
-    font-size:2.3vw;
-}
-
-h2{
+    font-size:2.2vw;
 }
 
 #probablyWondering{
@@ -59,8 +56,8 @@ p{
 
 .arrow
 {
-  position: relative;
-  bottom: -55rem;
+  position: absolute;
+  bottom: 2rem;
   left: 50%;
   margin-left:-20px;
   width: 40px;
