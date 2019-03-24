@@ -38,6 +38,9 @@
 </div>
 
 
-<div class="arrow bounce"></div>
+<div 
+[ngClass]="{'fadeOut': arrowFade, 'fadeIn': !arrowFade }" 
+class="arrow bounce">
+</div>
 
 

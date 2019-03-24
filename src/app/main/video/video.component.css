@@ -1,0 +1,18 @@
+#videoSample{
+    position:relative;
+}
+
+#drawnArrow{
+    position:absolute;
+    width:17vw;
+    margin-top: -40%;
+    margin-left: 45%;
+    -moz-transform: rotate(-20deg) scaleX(-1);
+    -o-transform: rotate(-20deg) scaleX(-1);
+    -webkit-transform: rotate(-20deg) ßscaleX(-1);
+    transform:rotate(-20deg) scaleX(-1);
+}
+
+#watcherImage{
+    position:relative;
+}
