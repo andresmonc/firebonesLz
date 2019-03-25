@@ -1,0 +1,17 @@
+#socialMediaIcons{
+    text-align:center;
+    margin-bottom:2%;
+
+}
+
+.fab{
+    padding:50px;
+    color: black;
+}
+
+.fab:hover {
+    opacity: 0.5;
+    transition:.5s ease;
+}
+
+

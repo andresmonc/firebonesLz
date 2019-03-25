@@ -9,7 +9,9 @@
             <input type="email" name="name" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Enter your email" [(ngModel)]="email" required>
             <span class="input-group-btn">
-                <button type="submit" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Subscribe!</button>
+                <button type="submit" id="submitButton" class="btn btn-primary">Subscribe!</button>
+                <!-- <button type="submit" id="submitButton" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Subscribe!</button> -->
+
             </span>
          </div>
 

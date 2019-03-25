@@ -2,8 +2,8 @@
 
 #subscribe{
     position:relative;
-    margin-right: 24%;
-    margin-left: 24%;
+    margin-right: 28%;
+    margin-left: 28%;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -33,12 +33,54 @@ h2{
     border-color:rgb(0, 0, 0)
 }
 
-.container{
-    text-align:center;
+.btn-primary:hover{
+    margin-left:20px;
+    color:black;
+    background-color:rgb(255, 255, 255);
+    border-color:black;
 }
 
-p{
-    font-size:30px;
+.btn-primary:active:focus{
+    margin-left:20px;
+    color:black;
+    background-color:rgb(246,224,191);
+    border-color:black;
+    outline: none !important;
+    box-shadow: none;
+}
+
+button:active:focus{
+    border-color: black;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+
+input:focus{
+    border-color: black;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+}
+
+
+
+
+
+
+.container{
+    text-align:center;
+    transition: .5s ease-in;
+}
+
+.form-control{
+    font-size:18px;
 }
 
 
