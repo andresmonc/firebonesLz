@@ -19,14 +19,16 @@
     position:relative;
     margin-left:35%;
     margin-top:-29%;
+    height: auto;
+    width: 1px;
 }
 
 .pulse {
     position:absolute;
-    margin-top: -39.3%;
-    margin-left: 48.5%;
-    width: 90px;
-    height: 90px;
+    margin-top: var(--audio-dot-mt);
+    margin-left: var(--audio-dot-ml);
+    width: var(--audio-dot-w);
+    height: var(--audio-dot-w);
     border-radius: 50%;
     background: #c6636c;
     opacity:.6;
@@ -69,10 +71,10 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     position:absolute;
-    margin-top: -45%;
+    margin-top: var(--listen-mt);
     cursor: pointer;
     margin-left: 21.5%;
-    font-size:120px;
+    font-size: var(--av-font-sz);
     -ms-transform: skewY(-5deg) skewX(10deg) rotate(-3deg) ; /* IE 9 */
     -webkit-transform: skewY(-5deg) skewX(10deg) rotate(-3deg) ;/* Safari */
     transform: skewY(-5deg) skewX(10deg) rotate(-3deg) ; /* Standard syntax */
@@ -81,3 +83,4 @@
   h1:hover {
     color: #c6636c
   }
+

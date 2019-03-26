@@ -8,7 +8,7 @@
     position:absolute;
     width:15vw;
     margin-top: -39%;
-    margin-left: 52%;
+    margin-left: var(--watch-arrow-ml);
     -moz-transform: rotate(-20deg) scaleX(-1);
     -o-transform: rotate(-20deg) scaleX(-1);
     -webkit-transform: rotate(-20deg) scaleX(-1);
@@ -22,8 +22,9 @@
 
 .pulse {
     position:absolute;
-    margin-top: -39.1%;
-    margin-left: 44.14%;
+    /* margin-top: -39.1%; */
+    margin-top: var(--video-dot-mt);
+    margin-left: var(--video-dot-ml);
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -70,10 +71,10 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     position:absolute;
-    margin-top: -48.5%;
+    margin-top: var(--watch-mt);
     margin-left: 61%;
     cursor: pointer;
-    font-size:120px;
+    font-size:var(--av-font-sz);
     -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; /* IE 9 */
     -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; /* Safari */
     transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; /* Standard syntax */
