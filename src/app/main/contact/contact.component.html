@@ -6,26 +6,31 @@
 
   <form *ngIf="!formSuccess" (ngSubmit)="sendEmail()" #emailForm="ngForm">
 
-    <div class="input-group">
+    <div class="container-fluid">
+      <div class="input-group row align-items-start">
+        <div class="col-lg-6 col-sm-12 mt-3">
+          <input type="email" name="name" class="form-control input" id="inputEmail" aria-describedby="emailHelp"
+            placeholder="Enter your email" [(ngModel)]="name" required>
+        </div>
+        <div class="col-lg-6 col-sm-12 mt-3">
+          <input type="text" name="email" class="form-control input" id="inputName" placeholder="Enter your name"
+            [(ngModel)]="email" required>
+        </div>
 
-        <input type="email" name="name" class="form-control input" id="inputEmail" aria-describedby="emailHelp"
-          placeholder="Enter your email" [(ngModel)]="name" required>
-
-        <input type="text" name="email" class="form-control input" id="inputName" placeholder="Enter your name"
-          [(ngModel)]="email" required>
+      </div>
 
 
+      <div class="form-group field row">
+        <div class="col mt-3" id="inputMessage">
+          <textarea class="form-control input" name="message" rows="3" placeholder="Send us a message"
+            [(ngModel)]="message" required></textarea>
+        </div>
+      </div>
+      <div class="row ml-1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </div>
 
-
-    <div class="form-group field">
-      <textarea class="form-control input" name="message" id="inputMessage" rows="3" placeholder="Send us a message"
-        [(ngModel)]="message" required></textarea>
-    </div>
-
-
-
-    <button type="submit" class="btn btn-primary">Submit</button>
     <!-- <button type="submit" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Submit</button> -->
   </form>
 

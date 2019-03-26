@@ -2,13 +2,13 @@
 
 #subscribe{
     position:relative;
-    margin-right: 28%;
-    margin-left: 28%;
+    margin-right: var(--margin-right);
+    margin-left: var(--margin-left);
     font-family: 'Cormorant Garamond', serif;
 }
 
 h1{
-    margin-bottom:50px;
+    margin-bottom: var(--title-margin-bot);
     text-align:center;
     font-size:68px;
     font-style:italic;
@@ -18,7 +18,7 @@ h1{
 }
 
 h2{
-    margin-bottom:50px;
+    margin-bottom: var(--title-margin-bot);
     text-align:center;
 }
 
@@ -27,21 +27,21 @@ h2{
 }
 
 .btn-primary{
-    margin-left:20px;
+    /* margin-left:20px; */
     color:#fff;
     background-color:rgb(0, 0, 0);
     border-color:rgb(0, 0, 0)
 }
 
 .btn-primary:hover{
-    margin-left:20px;
+    /* margin-left:20px; */
     color:black;
     background-color:rgb(255, 255, 255);
     border-color:black;
 }
 
 .btn-primary:active:focus{
-    margin-left:20px;
+    /* margin-left:20px; */
     color:black;
     background-color:rgb(246,224,191);
     border-color:black;

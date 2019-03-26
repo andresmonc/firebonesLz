@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+body {
   background-image: url("https://s3-us-west-1.amazonaws.com/firebones-lz/paperPattern.png");
+  margin-left: 0;
+  padding-left: 0;
+}
+.main {
+  margin-left:0px;
 }
 
 
@@ -14,17 +19,6 @@ body{
   z-index: 1;
 }
 
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 20px;
-}
 
 html {
   scroll-behavior: smooth;
@@ -33,24 +27,31 @@ html {
 /* mobile variables */
 @media only screen and (max-width: 740px) {
   :root {
-    --mfer: 10px;
-    --logo-width: 400
+    /* mobile */
+    --margin-left: 10vw;
+    --margin-right: 2vw;
+    --nav-margin-left: -25px;
+    --title-margin-bot: 2vh;
   }
 
 }
 
 /* desktop variables */
 @media only screen and (min-width: 740px) {
+
   :root {
-    --mfer: 300px;
-    --logo-width: 200;
+    /* desktop */
+    --margin-left: 25vw;
+    --margin-right: 25vw;
+    --nav-margin-left: -5px;
+    --title-margin-bot: 50px;
   }
 
 }
 
 
 /* Fade in/out animations classes and keyframes */
-.hide{
+.hide {
   opacity: 0;
 }
 
@@ -69,20 +70,24 @@ html {
     opacity: 0;
     height: initial;
   }
+
   100% {
     opacity: 1;
     height: initial;
   }
 }
+
 @keyframes FadeOut {
   0% {
     opacity: 1;
     height: initial;
   }
+
   99% {
     opacity: 0;
     height: initial;
   }
+
   100% {
     height: 0;
     opacity: 0;

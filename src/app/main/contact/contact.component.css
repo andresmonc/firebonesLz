@@ -1,103 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700,700i');
 
-#contact{
-    margin-right: 28%;
-    margin-left: 28%;
-    margin-bottom:10%;
-    margin-top:15%;
-    position:relative;
-    font-family: 'Cormorant Garamond', serif;
+#contact {
+  margin-right: var(--margin-right);
+  margin-left: var(--margin-left);
+  margin-bottom: 10%;
+  margin-top: 15%;
+  width: auto;
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 
-h1{
-    margin-bottom:50px;
-    text-align:center;
-    font-size:68px;
-    font-style:italic;
-    -ms-transform: skewY(-20deg) skewX(10deg); /* IE 9 */
-    -webkit-transform: skewY(-20deg) skewX(10deg)  ; /* Safari */
-    transform: skewY(-2deg) skewX(5deg) rotate(2deg); /* Standard syntax */
+h1 {
+  margin-bottom: var(--title-margin-bot);
+  text-align: center;
+  font-size: 68px;
+  font-style: italic;
+  -ms-transform: skewY(-20deg) skewX(10deg);
+  /* IE 9 */
+  -webkit-transform: skewY(-20deg) skewX(10deg);
+  /* Safari */
+  transform: skewY(-2deg) skewX(5deg) rotate(2deg);
+  /* Standard syntax */
 }
 
-h2{
-    margin-bottom:50px;
-    text-align:center;
+h2 {
+  margin-bottom: var(--title-margin-bot);
+  text-align: center;
 }
 
-.firebones{
-    font-weight:700;
+.firebones {
+  font-weight: 700;
 }
 
-.btn-primary{
-    color:#fff;
-    background-color:rgb(0, 0, 0);
-    border-color:rgb(0, 0, 0)
+.btn-primary {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0)
 }
 
-.btn-primary:hover{
-    color:black;
-    background-color:rgb(255, 255, 255);
-    border-color:black;
+.btn-primary:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
 }
 
-.btn-primary:active:focus{
-    color:black;
-    background-color:rgb(246,224,191);
-    border-color:black;
-    outline: none !important;
-    box-shadow: none;
+.btn-primary:active:focus {
+  color: black;
+  background-color: rgb(246, 224, 191);
+  border-color: black;
+  outline: none !important;
+  box-shadow: none;
 }
 
-button:active:focus{
-    border-color: black;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+button:active:focus {
+  border-color: black;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
 }
 
-.btn:focus,.btn:active {
-    outline: none !important;
-    box-shadow: none;
- }
-
-
-input:focus{
-    border-color: black;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
 }
 
 
-textarea:focus{
-    border-color: black;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
-}
-
-.lead{
-    font-size:27px;
+input:focus {
+  border-color: black;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
 }
 
 
-
-
-.container{
-    text-align:center;
-    transition: .5s ease-in;
+textarea:focus {
+  border-color: black;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(105, 105, 105, 0.6);
 }
 
-.form-control{
-    font-size:18px;
+.lead {
+  font-size: 27px;
 }
 
-#inputName{
-    margin-left:20px;
+
+
+
+.container {
+  text-align: center;
+  transition: .5s ease-in;
 }
 
-#inputMessage{
-    margin-top:20px;
+.form-control {
+  font-size: 18px;
 }
 
+
+#inputMessage {
+  margin-right: 28px;
+}

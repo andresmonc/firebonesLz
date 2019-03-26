@@ -3,21 +3,25 @@
   <h2>Subscribe to the <b class="firebones">Firebones</b> emailing list for updates!</h2>
 
   <form *ngIf="!formSuccess" (ngSubmit)="subscribe()" #emailForm="ngForm">
-    <div class="form-group field">
-
+    <div class="container-fluid">
+      <div class="form-group field">
         <div class="input-group">
-            <input type="email" name="name" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter your email" [(ngModel)]="email" required>
-            <span class="input-group-btn">
-                <button type="submit" id="submitButton" class="btn btn-primary">Subscribe!</button>
-                <!-- <button type="submit" id="submitButton" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Subscribe!</button> -->
-
-            </span>
-         </div>
 
 
+
+          <div class="col-lg-10">
+            <input type="email" name="name" class="form-control input mt-3" id="exampleInputEmail1"
+              aria-describedby="emailHelp" placeholder="Enter your email" [(ngModel)]="email" required>
+          </div>
+          <div class="input-group-btn col-2">
+            <button type="submit" id="submitButton" class="btn btn-primary mt-3">Subscribe!</button>
+            <!-- <button type="submit" id="submitButton" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Subscribe!</button> -->
+          </div>
+
+
+        </div>
+      </div>
     </div>
-    
   </form>
 
 
