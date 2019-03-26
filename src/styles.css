@@ -29,12 +29,14 @@ html {
     --audio-dot-ml: 52%;
     --audio-dot-mt: -55%;
     --audio-dot-w: 45px;
-    --listen-mt: -51%;
+    --listen-mt: -64%;
+    --listen-arrow-mt: -50%;
+    --listen-arrow-ml: 36%;
     --video-dot-mt: -55%;
     --video-dot-ml: 56.7%;
-    --watch-arrow-mt: 0;
+    --watch-arrow-mt: -52%;
     --watch-arrow-ml: 65%;
-    --watch-mt: -52%;
+    --watch-mt: -67%;
     --av-font-sz: 14vw;
   }
 
@@ -44,14 +46,18 @@ html {
 @media only screen and (min-width: 741px) and (max-width: 1100px) {
 
   :root {
+    --margin-left: 25vw;
+    --margin-right: 25vw;
     --av-image: 60vw;
     --audio-dot-ml: 48.5%;
     --audio-dot-mt: -40.3%;
-    --audio-dot-w: 90px;
+    --audio-dot-w: 50px;
     --listen-mt: -47%;
+    --listen-arrow-mt: -36%;
+    --listen-arrow-ml: 30%;
     --video-dot-mt: -41%;
     --video-dot-ml: 44%;
-    --watch-arrow-mt: 0;
+    --watch-arrow-mt: -39%;
     --watch-arrow-ml: 52%;
     --watch-mt: -50%;
     --av-font-sz: 12vw;
@@ -72,9 +78,11 @@ html {
     --audio-dot-mt: -39.3%;
     --audio-dot-w: 90px;
     --listen-mt: -45%;
+    --listen-arrow-mt: -36%;
+    --listen-arrow-ml: 30%;
     --video-dot-mt: -39.1%;
     --video-dot-ml: 44.14%;
-    --watch-arrow-mt: 42;
+    --watch-arrow-mt: -39%;
     --watch-arrow-ml: 52%;
     --watch-mt: -48.5%;
     --av-font-sz: 120px;

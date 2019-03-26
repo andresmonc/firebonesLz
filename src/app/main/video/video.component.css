@@ -7,7 +7,7 @@
 #drawnArrow{
     position:absolute;
     width:15vw;
-    margin-top: -39%;
+    margin-top: var(--watch-arrow-mt);
     margin-left: var(--watch-arrow-ml);
     -moz-transform: rotate(-20deg) scaleX(-1);
     -o-transform: rotate(-20deg) scaleX(-1);
@@ -22,7 +22,6 @@
 
 .pulse {
     position:absolute;
-    /* margin-top: -39.1%; */
     margin-top: var(--video-dot-mt);
     margin-left: var(--video-dot-ml);
     width: 35px;
