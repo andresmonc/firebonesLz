@@ -21,6 +21,8 @@ html {
 /* mobile variables */
 @media only screen and (max-width: 740px) {
   :root {
+    /* about component */
+    --about-h1: 4.4vw;
     --margin-left: 10%;
     --margin-right: 10%;
     --nav-margin-left: -25px;
@@ -48,6 +50,10 @@ html {
 @media only screen and (min-width: 741px) and (max-width: 1100px) {
 
   :root {
+    /* about component */
+    --about-h1: 4.4vw;
+
+    /* Component Margins */
     --margin-left: 20%;
     --margin-right: 20%;
     --av-image: 60vw;
@@ -73,6 +79,8 @@ html {
 @media only screen and (min-width: 1101px) {
 
   :root {
+    /* about component */
+    --about-h1: 2.2vw;
     --margin-left: 23%;
     --margin-right: 23%;
     --nav-margin-left: -5px;
@@ -92,6 +100,7 @@ html {
     --av-font-sz: 120px;
     --logo-width: 18vw;
     --nav-font-sz: 72px;
+
   }
 
 }
