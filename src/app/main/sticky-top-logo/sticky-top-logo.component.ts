@@ -10,7 +10,7 @@ import { WINDOW } from "../../services/window.service";
 })
 export class StickyTopLogoComponent implements OnInit {
 
-  private bringTextCloser: boolean = false;
+  public bringTextCloser: boolean = false;
 
   constructor(    
   @Inject(DOCUMENT) private document: Document,

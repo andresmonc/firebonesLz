@@ -10,7 +10,7 @@ import { WINDOW } from "../../services/window.service";
 })
 export class AboutComponent implements OnInit {
 
-  private arrowFade: boolean = false;
+  public arrowFade: boolean = false;
 
   private arrowFadepoint: number;
 

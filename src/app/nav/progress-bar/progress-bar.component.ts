@@ -23,7 +23,7 @@ export class ProgressBarComponent implements OnInit {
   private contactOffset: number;
   private subscribeOffset: number;
 
-  private loadBar: boolean = false;
+  public loadBar: boolean = false;
   private triggerBeforeElem: number = 200;
 
   constructor(

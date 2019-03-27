@@ -10,7 +10,7 @@ import { apiReturnService } from '../../services/API.service';
 export class SubscribeComponent implements OnInit {
 
   private formSubmitted: boolean = false;
-  private formSuccess: boolean = false;
+  public formSuccess: boolean = false;
   private email: string;
 
 
