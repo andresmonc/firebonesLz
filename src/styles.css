@@ -21,8 +21,8 @@ html {
 /* mobile variables */
 @media only screen and (max-width: 740px) {
   :root {
-    --margin-left: 10vw;
-    --margin-right: 2vw;
+    --margin-left: 10%;
+    --margin-right: 10%;
     --nav-margin-left: -25px;
     --title-margin-bot: 2vh;
     --av-image: 80vw;
@@ -46,8 +46,8 @@ html {
 @media only screen and (min-width: 741px) and (max-width: 1100px) {
 
   :root {
-    --margin-left: 25vw;
-    --margin-right: 25vw;
+    --margin-left: 20%;
+    --margin-right: 20%;
     --av-image: 60vw;
     --audio-dot-ml: 48.5%;
     --audio-dot-mt: -40.3%;
@@ -69,8 +69,8 @@ html {
 @media only screen and (min-width: 1101px) {
 
   :root {
-    --margin-left: 25vw;
-    --margin-right: 25vw;
+    --margin-left: 23%;
+    --margin-right: 23%;
     --nav-margin-left: -5px;
     --title-margin-bot: 50px;
     --av-image: 60vw;
