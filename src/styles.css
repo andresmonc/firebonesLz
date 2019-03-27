@@ -38,6 +38,8 @@ html {
     --watch-arrow-ml: 65%;
     --watch-mt: -67%;
     --av-font-sz: 14vw;
+    --logo-width: 14vw;
+    --nav-font-sz: 38px;
   }
 
 }
@@ -61,6 +63,8 @@ html {
     --watch-arrow-ml: 52%;
     --watch-mt: -50%;
     --av-font-sz: 12vw;
+    --logo-width: 25vw;
+    --nav-font-sz: 72px;
   }
 
 }
@@ -86,6 +90,8 @@ html {
     --watch-arrow-ml: 52%;
     --watch-mt: -48.5%;
     --av-font-sz: 120px;
+    --logo-width: 18vw;
+    --nav-font-sz: 72px;
   }
 
 }
