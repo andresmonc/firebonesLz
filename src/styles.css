@@ -31,6 +31,7 @@ html {
     /* ProgressBar */
     --nav-margin-left: -25px;
     --title-margin-bot: 2vh;
+    /* Audio/Video Components */
     --av-image: 80vw;
     --audio-dot-ml: 52%;
     --audio-dot-mt: -55%;
@@ -98,7 +99,8 @@ html {
     --margin-right: 23%;
     /* ProgressBar */
     --nav-margin-left: -5px;
-    --title-margin-bot: 50px;
+    --title-margin-bot: 50px; 
+    /* Audio/Video Components */
     --av-image: 60vw;
     --audio-dot-ml: 48.5%;
     --audio-dot-mt: -39.3%;
