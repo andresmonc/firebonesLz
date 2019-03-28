@@ -23,7 +23,7 @@ html {
   :root {
     /* about component */
     --about-h1-font-sz: 4.4vw;
-    --about-probablywondering-whatisgo-whatisfire-font-sz: 3.2vw;
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 4.4vw;
     --about-paragraph-font-sz: 18px;
     /* Component Margins */
     --margin-left: 10%;
