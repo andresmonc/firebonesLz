@@ -22,7 +22,8 @@ html {
 @media only screen and (max-width: 740px) {
   :root {
     /* about component */
-    --about-h1: 4.4vw;
+    --about-h1-font-sz: 4.4vw;
+    --about-probablywondering-font-sz: 3.2vw;
     --margin-left: 10%;
     --margin-right: 10%;
     --nav-margin-left: -25px;
@@ -51,8 +52,8 @@ html {
 
   :root {
     /* about component */
-    --about-h1: 4.4vw;
-
+    --about-h1-font-sz: 4.4vw;
+    --about-probablywondering-font-sz: 3.2vw;
     /* Component Margins */
     --margin-left: 20%;
     --margin-right: 20%;
@@ -80,7 +81,8 @@ html {
 
   :root {
     /* about component */
-    --about-h1: 2.2vw;
+    --about-h1-font-sz: 2.2vw;
+    --about-probablywondering-font-sz: 1.6vw;
     --margin-left: 23%;
     --margin-right: 23%;
     --nav-margin-left: -5px;
