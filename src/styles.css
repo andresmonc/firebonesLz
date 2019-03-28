@@ -23,9 +23,12 @@ html {
   :root {
     /* about component */
     --about-h1-font-sz: 4.4vw;
-    --about-probablywondering-font-sz: 3.2vw;
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 3.2vw;
+    --about-paragraph-font-sz: 18px;
+    /* Component Margins */
     --margin-left: 10%;
     --margin-right: 10%;
+    /* ProgressBar */
     --nav-margin-left: -25px;
     --title-margin-bot: 2vh;
     --av-image: 80vw;
@@ -41,6 +44,7 @@ html {
     --watch-arrow-ml: 65%;
     --watch-mt: -67%;
     --av-font-sz: 14vw;
+    /* StickyLogo Component */
     --logo-width: 14vw;
     --nav-font-sz: 38px;
   }
@@ -53,10 +57,14 @@ html {
   :root {
     /* about component */
     --about-h1-font-sz: 4.4vw;
-    --about-probablywondering-font-sz: 3.2vw;
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 3.2vw;
+    --about-paragraph-font-sz: 18px;
     /* Component Margins */
     --margin-left: 20%;
     --margin-right: 20%;
+    /* ProgressBar */
+    --nav-margin-left: -5px;
+    /* Audio/Video Components */
     --av-image: 60vw;
     --audio-dot-ml: 48.5%;
     --audio-dot-mt: -40.3%;
@@ -70,6 +78,7 @@ html {
     --watch-arrow-ml: 52%;
     --watch-mt: -50%;
     --av-font-sz: 12vw;
+    /* StickyLogo Component */
     --logo-width: 25vw;
     --nav-font-sz: 72px;
   }
@@ -82,9 +91,12 @@ html {
   :root {
     /* about component */
     --about-h1-font-sz: 2.2vw;
-    --about-probablywondering-font-sz: 1.6vw;
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 1.6vw;
+    --about-paragraph-font-sz: 18px;
+    /* Component Margins */
     --margin-left: 23%;
     --margin-right: 23%;
+    /* ProgressBar */
     --nav-margin-left: -5px;
     --title-margin-bot: 50px;
     --av-image: 60vw;
@@ -100,6 +112,7 @@ html {
     --watch-arrow-ml: 52%;
     --watch-mt: -48.5%;
     --av-font-sz: 120px;
+    /* StickyLogo Component */
     --logo-width: 18vw;
     --nav-font-sz: 72px;
 
