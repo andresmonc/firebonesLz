@@ -49,6 +49,8 @@ html {
     /* StickyLogo Component */
     --logo-width: 14vw;
     --nav-font-sz: 38px;
+    --subscribe-contact-h1: 50px;
+    --subscribe-contact-h2: 30px;
   }
 
 }
@@ -84,6 +86,8 @@ html {
     /* StickyLogo Component */
     --logo-width: 25vw;
     --nav-font-sz: 72px;
+    --subscribe-contact-h1: 68px;
+    --subscribe-contact-h2: 2em;
   }
 
 }
@@ -120,7 +124,8 @@ html {
     /* StickyLogo Component */
     --logo-width: 18vw;
     --nav-font-sz: 72px;
-
+    --subscribe-contact-h1: 68px;
+    --subscribe-contact-h2: 2em;
   }
 
 }

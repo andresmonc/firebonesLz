@@ -14,7 +14,7 @@
 h1 {
   margin-bottom: var(--title-margin-bot);
   text-align: center;
-  font-size: 68px;
+  font-size: var(--subscribe-contact-h1);
   font-style: italic;
   -ms-transform: skewY(-20deg) skewX(10deg);
   /* IE 9 */
@@ -27,6 +27,7 @@ h1 {
 h2 {
   margin-bottom: var(--title-margin-bot);
   text-align: center;
+  font-size: var(--subscribe-contact-h2);
 }
 
 .firebones {
