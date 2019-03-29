@@ -22,8 +22,8 @@ html {
 @media only screen and (max-width: 740px) {
   :root {
     /* about component */
-    --about-h1-font-sz: 4.4vw;
-    --about-probablywondering-whatisgo-whatisfire-font-sz: 4.4vw;
+    --about-h1-font-sz: 5.2vw;
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 5.2vw;
     --about-paragraph-font-sz: 18px;
     /* Component Margins */
     --margin-left: 10%;
@@ -39,6 +39,7 @@ html {
     --listen-mt: -64%;
     --listen-arrow-mt: -50%;
     --listen-arrow-ml: 36%;
+    --eye-pulse-size: 25px;
     --video-dot-mt: -55%;
     --video-dot-ml: 56.7%;
     --watch-arrow-mt: -52%;
@@ -73,7 +74,8 @@ html {
     --listen-mt: -47%;
     --listen-arrow-mt: -36%;
     --listen-arrow-ml: 30%;
-    --video-dot-mt: -41%;
+    --eye-pulse-size: 30px;
+    --video-dot-mt: -40%;
     --video-dot-ml: 44%;
     --watch-arrow-mt: -39%;
     --watch-arrow-ml: 52%;
@@ -108,6 +110,7 @@ html {
     --listen-mt: -45%;
     --listen-arrow-mt: -36%;
     --listen-arrow-ml: 30%;
+    --eye-pulse-size: 35px;
     --video-dot-mt: -39.1%;
     --video-dot-ml: 44.14%;
     --watch-arrow-mt: -39%;

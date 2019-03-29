@@ -24,8 +24,8 @@
     position:absolute;
     margin-top: var(--video-dot-mt);
     margin-left: var(--video-dot-ml);
-    width: 35px;
-    height: 35px;
+    width: var(--eye-pulse-size);
+    height: var(--eye-pulse-size);
     border-radius: 50%;
     background: #c6636c;
     opacity:.6;
