@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
 
-#videoSample{
+#audioSample{
     position:relative;
 }
 
@@ -16,7 +16,7 @@
 }
 
 #listenerImage{
-    position:relative;
+    position:absolute;
     margin-left:35%;
     margin-top:-29%;
     height: auto;

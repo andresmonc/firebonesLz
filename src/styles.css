@@ -130,6 +130,97 @@ html {
 
 }
 
+/**** START -- THESE STYLES PERTAIN TO ONLY AUDIO AND VIDEO COMPONENETS  -- START *****/
+
+@media only screen and (min-width: 1600px) {
+
+  :root {
+
+    /*Video Components */
+    --containter-img-width: 230%;
+    --container-img-margin-left:-140%;
+    --pulse-top:50.8%;
+    --pulse-left:12%;
+    --pulse-width:32px;
+    --pulse-height:32px;
+
+  }
+
+}
+
+
+/* desktop variables */
+@media only screen and (min-width: 1100px) and (max-width: 1599px) {
+
+  :root {
+
+    /*Video Components */
+    --containter-img-width: 200%;
+    --container-img-margin-left:-100%;
+    --pulse-top:50.8%;
+    --pulse-left:31%;
+    --pulse-width:28px;
+    --pulse-height:28px;
+
+  }
+
+}
+
+
+/* desktop variables */
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+
+  :root {
+
+    /*Video Components */
+    --containter-img-width: 180%;
+    --container-img-margin-left:-80%;
+    --pulse-top:50.8%;
+    --pulse-left:38%;
+    --pulse-width:25px;
+    --pulse-height:25px;
+
+  }
+
+}
+
+@media only screen  and (min-width: 469px) and (max-width: 899px) {
+
+  :root {
+
+    /*Video Components */
+    --containter-img-width: 109%;
+    --container-img-margin-left:-27%;
+    --pulse-top:50.8%;
+    --pulse-left:44%;
+    --pulse-width:15px;
+    --pulse-height:15px;
+
+  }
+
+}
+
+@media only screen and (max-width: 468px) {
+
+  :root {
+
+    /*Video Components */
+    --containter-img-width: 109%;
+    --container-img-margin-left:-27%;
+    --pulse-top:50.5%;
+    --pulse-left:44%;
+    --pulse-width:15px;
+    --pulse-height:15px;
+
+  }
+
+}
+
+
+
+/**** END -- THESE STYLES PERTAIN TO ONLY AUDIO AND VIDEO COMPONENETS -- END *****/
+
+
 
 /* Fade in/out animations classes and keyframes */
 .hide {
