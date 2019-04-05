@@ -45,7 +45,6 @@ html {
     --watch-arrow-mt: -52%;
     --watch-arrow-ml: 65%;
     --watch-mt: -67%;
-    --av-font-sz: 14vw;
     /* StickyLogo Component */
     --logo-width: 14vw;
     --nav-font-sz: 38px;
@@ -82,7 +81,6 @@ html {
     --watch-arrow-mt: -39%;
     --watch-arrow-ml: 52%;
     --watch-mt: -50%;
-    --av-font-sz: 12vw;
     /* StickyLogo Component */
     --logo-width: 25vw;
     --nav-font-sz: 72px;
@@ -120,7 +118,6 @@ html {
     --watch-arrow-mt: -39%;
     --watch-arrow-ml: 52%;
     --watch-mt: -48.5%;
-    --av-font-sz: 120px;
     /* StickyLogo Component */
     --logo-width: 18vw;
     --nav-font-sz: 72px;
@@ -137,12 +134,22 @@ html {
   :root {
 
     /*Video Components */
-    --containter-img-width: 230%;
-    --container-img-margin-left:-140%;
-    --pulse-top:50.8%;
-    --pulse-left:12%;
-    --pulse-width:32px;
-    --pulse-height:32px;
+    --containter-watcher-width: 230%;
+    --container-watcher-margin-left:-130%;
+    --containter-watcher-arrow-width: 230%;
+    --container-watcher-arrow-margin-left:-140%;
+    --pulse-watcher-top:50.8%;
+    --pulse-watcher-left:21%;
+    --pulse-watcher-width:32px;
+    --pulse-watcher-height:32px;
+    --watcher-arrow-width:50%;
+    --watcher-arrow-top:52%;
+    --watcher-arrow-left:49%;
+    --watcher-text-font-sz:150px;
+    --watcher-text-top:38%;
+    --watcher-text-left:75%;
+
+    
 
   }
 
@@ -155,12 +162,18 @@ html {
   :root {
 
     /*Video Components */
-    --containter-img-width: 200%;
-    --container-img-margin-left:-100%;
-    --pulse-top:50.8%;
-    --pulse-left:31%;
-    --pulse-width:28px;
-    --pulse-height:28px;
+    --containter-watcher-width: 200%;
+    --container-watcher-margin-left:-100%;
+    --pulse-watcher-top:50.8%;
+    --pulse-watcher-left:31%;
+    --pulse-watcher-width:28px;
+    --pulse-watcher-height:28px;
+    --watcher-arrow-width:50%;
+    --watcher-arrow-top:52%;
+    --watcher-arrow-left:50%;
+    --watcher-text-font-sz:150px;
+    --watcher-text-top:38%;
+    --watcher-text-left:67%;
 
   }
 
@@ -168,49 +181,69 @@ html {
 
 
 /* desktop variables */
-@media only screen and (min-width: 900px) and (max-width: 1099px) {
+@media only screen and (min-width: 901px) and (max-width: 1099px) {
 
   :root {
 
     /*Video Components */
-    --containter-img-width: 180%;
-    --container-img-margin-left:-80%;
-    --pulse-top:50.8%;
-    --pulse-left:38%;
-    --pulse-width:25px;
-    --pulse-height:25px;
+    --containter-watcher-width: 180%;
+    --container-watcher-margin-left:-80%;
+    --pulse-watcher-top:50.8%;
+    --pulse-watcher-left:38%;
+    --pulse-watcher-width:25px;
+    --pulse-watcher-height:25px;
+    --watcher-arrow-width:40%;
+    --watcher-arrow-top:52%;
+    --watcher-arrow-left:58%;
+    --watcher-text-font-sz:115px;
+    --watcher-text-top:38%;
+    --watcher-text-left:74%;
+
+
 
   }
 
 }
 
-@media only screen  and (min-width: 469px) and (max-width: 899px) {
+@media only screen  and (min-width: 580px) and (max-width: 900px) {
 
   :root {
 
     /*Video Components */
-    --containter-img-width: 109%;
-    --container-img-margin-left:-27%;
-    --pulse-top:50.8%;
-    --pulse-left:44%;
-    --pulse-width:15px;
-    --pulse-height:15px;
+    --containter-watcher-width: 109%;
+    --container-watcher-margin-left:-27%;
+    --pulse-watcher-top:50.8%;
+    --pulse-watcher-left:44%;
+    --pulse-watcher-width:15px;
+    --pulse-watcher-height:15px;
+    --watcher-arrow-width:28%;
+    --watcher-arrow-top:52%;
+    --watcher-arrow-left:58%;
+    --watcher-text-font-sz:72px;
+    --watcher-text-top:38%;
+    --watcher-text-left:74%;
 
   }
 
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 579px) {
 
   :root {
 
     /*Video Components */
-    --containter-img-width: 109%;
-    --container-img-margin-left:-27%;
-    --pulse-top:50.5%;
-    --pulse-left:44%;
-    --pulse-width:15px;
-    --pulse-height:15px;
+    --containter-watcher-width: 109%;
+    --container-watcher-margin-left:-27%;
+    --pulse-watcher-top:50.5%;
+    --pulse-watcher-left:44%;
+    --pulse-watcher-width:15px;
+    --pulse-watcher-height:15px;
+    --watcher-arrow-width:15%;
+    --watcher-arrow-top:52%;
+    --watcher-arrow-left:58%;
+    --watcher-text-font-sz:58px;
+    --watcher-text-top:38%;
+    --watcher-text-left:60%;
 
   }
 

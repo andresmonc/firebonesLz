@@ -27,7 +27,7 @@ export class StickyTopLogoComponent implements OnInit {
 
     console.log(this.document.body.clientWidth)
 
-    if(this.document.body.clientWidth < 855) {
+    if(this.document.body.clientWidth < 900) {
 
       if (this.document.body.scrollTop > 110 || this.document.documentElement.scrollTop > 110) {
         this.bringTextCloser = true;

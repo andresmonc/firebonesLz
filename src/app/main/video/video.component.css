@@ -5,15 +5,6 @@
     height: 60vw;
 }
 
-#drawnArrow{
-    position:absolute;
-    width:15vw;
-
-    -moz-transform: rotate(-20deg) scaleX(-1);
-    -o-transform: rotate(-20deg) scaleX(-1);
-    -webkit-transform: rotate(-20deg) scaleX(-1);
-    transform:rotate(-20deg) scaleX(-1);
-}
 
 #watcherImage{
     position:absolute;
@@ -97,20 +88,20 @@
     max-width: 500px;
   }
   
-  .container img {
-    width: var(--containter-img-width); /*responsive value tag*/
+  .container .watcher {
+    width: var(--containter-watcher-width); /*responsive value tag*/
     height: auto;
-    margin-left: var(--container-img-margin-left); /*responsive value tag*/
+    margin-left: var(--container-watcher-margin-left); /*responsive value tag*/
   }
   
 
   .pulse {
     position:absolute;
     text-align: center;
-    top: var(--pulse-top); 
-    left: var(--pulse-left); 
-    width: var(--pulse-width); 
-    height: var(--pulse-height); 
+    top: var(--pulse-watcher-top); 
+    left: var(--pulse-watcher-left); 
+    width: var(--pulse-watcher-width); 
+    height: var(--pulse-watcher-height); 
     border-radius: 50%;
     background: #c6636c;
     opacity:.6;
@@ -124,6 +115,36 @@
     opacity:.8;
     
   }
+
+  #drawnArrow{
+    position:absolute;
+    top: var(--watcher-arrow-top); 
+    width: var(--watcher-arrow-width); 
+    left: var(--watcher-arrow-left); 
+    -moz-transform: rotate(-19deg) scaleX(-1);
+    -o-transform: rotate(-19deg) scaleX(-1);
+    -webkit-transform: rotate(-19deg) scaleX(-1);
+    transform:rotate(-19deg) scaleX(-1);
+}
+
+.watchText{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    position:absolute;
+    cursor: pointer;
+    font-size:var(--watcher-text-font-sz);
+    top: var( --watcher-text-top); 
+    left: var( --watcher-text-left); 
+    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+  }
+  
+  h2:hover {
+    color: #c6636c
+  } */
+
+
 
   #videoModal{
       padding-right:0px !important;
