@@ -31,14 +31,18 @@ export class ContactComponent implements OnInit {
 
 
   sendEmail() {
-    this.apiservice.postContact(this.name, this.email, this.message).subscribe((res) => {
+    if (this.formSubmitted == false) {
       this.formSubmitted = true;
-      console.log(this.formSubmitted)
-      console.log(res);
-      if (res.statusCode == 200) {
-        this.formSuccess = true;
-      }
-    });
+      this.apiservice.postContact(this.name, this.email, this.message).subscribe((res) => {
+        console.log(this.formSubmitted)
+        console.log(res);
+        if (res.statusCode == 200) {
+          this.formSuccess = true;
+        } else if (res.statusCode != 200) {
+          this.formSubmitted = false;
+        }
+      })
+    };
   }
 
   @HostListener('keydown') onKeydown() {
@@ -53,7 +57,7 @@ export class ContactComponent implements OnInit {
       }
     }
     if (this.message.length > 0) {
-      if(this.message.length >= 10) {
+      if (this.message.length >= 10) {
         console.log('Message valid')
       }
     }
