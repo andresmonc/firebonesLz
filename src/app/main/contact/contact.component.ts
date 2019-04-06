@@ -16,9 +16,9 @@ export class ContactComponent implements OnInit {
   public message: string = "";
   public formSubmitted: boolean = false;
   public formSuccess: boolean = false;
-  public validName: boolean = true;
-  public validEmail: boolean = true;
-  public validMessage: boolean = true;
+  public validName: boolean = false;
+  public validEmail: boolean = false;
+  public validMessage: boolean = false;
 
 
   constructor(
@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
 
 
   sendEmail() {
-    if (this.formSubmitted == false) {
+    if (this.formSubmitted == false && this.validEmail && this.validMessage && this.validName) {
       this.formSubmitted = true;
       this.apiservice.postContact(this.name, this.email, this.message).subscribe((res) => {
         console.log(this.formSubmitted)
@@ -50,18 +50,15 @@ export class ContactComponent implements OnInit {
   }
 
   @HostListener('keydown') onKeydown() {
+    if (this.email.length > 0 && this.email.match('@') && this.email.match('\\.')) {
+      this.validEmail = true;
+    } else {
+      this.validEmail = false;
+    }
     if (this.name.length > 0 && this.name.length <= 2) {
       this.validName = false;
     } else {
       this.validName = true;
-    }
-
-    if (this.email.length > 0) {
-      if (this.email.match('@') && this.email.match('\\.')) {
-        this.validEmail = true;
-      } else {
-        this.validEmail = false;
-      }
     }
     if (this.message.length > 0 && this.message.length <= 10) {
       this.validMessage = false;

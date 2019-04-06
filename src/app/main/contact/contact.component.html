@@ -11,12 +11,12 @@
         <div class="col-lg-6 col-sm-12 mt-3">
           <input type="email" name="email" class="form-control input" id="inputEmail" aria-describedby="emailHelp"
             placeholder="Enter your email" [(ngModel)]="email" required>
-          <small class="form-error" *ngIf="!validEmail">Please enter a valid email address</small>
+          <small class="form-error" *ngIf="!validEmail && email.length > 0">Please enter a valid email address</small>
         </div>
         <div class="col-lg-6 col-sm-12 mt-3">
           <input type="text" name="name" class="form-control input" id="inputName" placeholder="Enter your name"
             [(ngModel)]="name" required>
-          <small class="form-error" *ngIf="!validName">Please enter a valid name</small>
+          <small class="form-error" *ngIf="!validName && name.length > 0">Please enter a valid name</small>
         </div>
 
       </div>
@@ -26,15 +26,15 @@
         <div class="col mt-3" id="inputMessage">
           <textarea class="form-control input" name="message" rows="3" placeholder="Send us a message"
             [(ngModel)]="message" required></textarea>
-            <small class="form-error" *ngIf="!validMessage">Please enter a valid message</small>
+            <small class="form-error" *ngIf="!validMessage && message.length > 0">Please enter a valid message</small>
         </div>
       </div>
       <div class="row ml-1">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" [disabled]="(!validName || !validEmail || !validMessage || formSubmitted)">Submit</button>
       </div>
     </div>
 
-    <!-- <button type="submit" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Submit</button> -->
+
   </form>
 
 
