@@ -18,6 +18,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.form-error{
+  color:red;
+  padding-left: 12px;
+}
+
 /* mobile variables */
 @media only screen and (max-width: 740px) {
   :root {

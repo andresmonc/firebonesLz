@@ -10,10 +10,6 @@
   font-family: 'Cormorant Garamond', serif;
 }
 
-.form-error{
-  color:red;
-  padding-left: 12px;
-}
 
 h1 {
   margin-bottom: var(--title-margin-bot);
