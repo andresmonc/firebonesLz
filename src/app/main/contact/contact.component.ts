@@ -11,11 +11,15 @@ import { WINDOW } from "../../services/window.service";
 })
 export class ContactComponent implements OnInit {
 
-  name: string = "";
-  email: string = "";
-  message: string = "";
-  formSubmitted: boolean = false;
-  formSuccess: boolean = false;
+  public name: string = "";
+  public email: string = "";
+  public message: string = "";
+  public formSubmitted: boolean = false;
+  public formSuccess: boolean = false;
+  public validName: boolean = true;
+  public validEmail: boolean = true;
+  public validMessage: boolean = true;
+
 
   constructor(
     private apiservice: apiReturnService,
@@ -46,20 +50,23 @@ export class ContactComponent implements OnInit {
   }
 
   @HostListener('keydown') onKeydown() {
-    if (this.name.length > 0) {
-      if (this.name.length >= 2) {
-        console.log('Name Valid')
-      }
+    if (this.name.length > 0 && this.name.length <= 2) {
+      this.validName = false;
+    } else {
+      this.validName = true;
     }
+
     if (this.email.length > 0) {
       if (this.email.match('@') && this.email.match('\\.')) {
-        console.log('Email valid')
+        this.validEmail = true;
+      } else {
+        this.validEmail = false;
       }
     }
-    if (this.message.length > 0) {
-      if (this.message.length >= 10) {
-        console.log('Message valid')
-      }
+    if (this.message.length > 0 && this.message.length <= 10) {
+      this.validMessage = false;
+    } else {
+      this.validMessage = true;
     }
   }
 
