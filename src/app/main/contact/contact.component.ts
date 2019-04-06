@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Inject } from "@angular/core";
 import { apiReturnService } from '../../services/API.service';
+import { DOCUMENT } from "@angular/platform-browser";
+import { WINDOW } from "../../services/window.service";
 
 @Component({
   selector: 'app-contact',
@@ -8,15 +11,21 @@ import { apiReturnService } from '../../services/API.service';
 })
 export class ContactComponent implements OnInit {
 
-  name: string;
-  email: string;
-  message: string;
+  name: string = "";
+  email: string = "";
+  message: string = "";
   formSubmitted: boolean = false;
   formSuccess: boolean = false;
 
-  constructor(private apiservice: apiReturnService) { }
+  constructor(
+    private apiservice: apiReturnService,
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(WINDOW) private window: Window
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(
+
+  ) {
 
   }
 
@@ -30,6 +39,24 @@ export class ContactComponent implements OnInit {
         this.formSuccess = true;
       }
     });
+  }
+
+  @HostListener('keydown') onKeydown() {
+    if (this.name.length > 0) {
+      if (this.name.length >= 2) {
+        console.log('Name Valid')
+      }
+    }
+    if (this.email.length > 0) {
+      if (this.email.match('@') && this.email.match('\\.')) {
+        console.log('Email valid')
+      }
+    }
+    if (this.message.length > 0) {
+      if(this.message.length >= 10) {
+        console.log('Message valid')
+      }
+    }
   }
 
 }
