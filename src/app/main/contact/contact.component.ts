@@ -38,8 +38,6 @@ export class ContactComponent implements OnInit {
     if (this.formSubmitted == false && this.validEmail && this.validMessage && this.validName) {
       this.formSubmitted = true;
       this.apiservice.postContact(this.name, this.email, this.message).subscribe((res) => {
-        console.log(this.formSubmitted)
-        console.log(res);
         if (res.statusCode == 200) {
           this.formSuccess = true;
         } else if (res.statusCode != 200) {
