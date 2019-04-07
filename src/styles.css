@@ -158,21 +158,24 @@ html {
     --watcher-arrow-top:52%;
     --watcher-arrow-left:49%;
     --watcher-text-font-sz:150px;
-    --watcher-text-top:38%;
+    --watcher-text-top:39%;
     --watcher-text-left:75%;
 
     --container-listener-width: 230%;
     --container-listener-margin-left:0%;
+
     --pulse-listener-top:46.8%;
     --pulse-listener-left:53.4%;
     --pulse-listener-width:89px;
     --pulse-listener-height:89px;
+
     --listener-arrow-width:50%;
     --listener-arrow-top:52%;
-    --listener-arrow-left:50%;
+    --listener-arrow-left:-7%;
+
     --listener-text-font-sz:150px;
-    --listener-text-top:38%;
-    --listener-text-left:67%;
+    --listener-text-top:40%;
+    --listener-text-left:-40%;
 
 
     
@@ -203,17 +206,19 @@ html {
 
     --container-listener-width: 200%;
     --container-listener-margin-left:0%;
+
     --pulse-listener-top:47.1%;
     --pulse-listener-left:46.5%;
     --pulse-listener-width:79px;
     --pulse-listener-height:79px;
+
     --listener-arrow-width:50%;
     --listener-arrow-top:52%;
-    --listener-arrow-left:50%;
-    --listener-text-font-sz:150px;
-    --listener-text-top:38%;
-    --listener-text-left:67%;
+    --listener-arrow-left:-7%;
 
+    --listener-text-font-sz:150px;
+    --listener-text-top:40%;
+    --listener-text-left:-40%;
 
   }
 
@@ -228,32 +233,36 @@ html {
     /*Video Components */
     --container-watcher-width: 180%;
     --container-watcher-margin-left:-80%;
+
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:38%;
     --pulse-watcher-width:25px;
     --pulse-watcher-height:25px;
+
     --watcher-arrow-width:40%;
     --watcher-arrow-top:52%;
     --watcher-arrow-left:58%;
+
     --watcher-text-font-sz:115px;
     --watcher-text-top:38%;
-    --watcher-text-left:74%;
+    --watcher-text-left:69%;
 
 
     --container-listener-width: 180%;
     --container-listener-margin-left:0%;
+
     --pulse-listener-top:47.1%;
     --pulse-listener-left:42.2%;
     --pulse-listener-width:67px;
     --pulse-listener-height:67px;
-    --listener-arrow-width:50%;
+
+    --listener-arrow-width:40%;
     --listener-arrow-top:52%;
-    --listener-arrow-left:50%;
-    --listener-text-font-sz:150px;
-    --listener-text-top:38%;
-    --listener-text-left:67%;
+    --listener-arrow-left:-7%;
 
-
+    --listener-text-font-sz:115px;
+    --listener-text-top:40%;
+    --listener-text-left:-25%;
 
     
 
@@ -270,13 +279,16 @@ html {
     /*Video Components */
     --container-watcher-width: 109%;
     --container-watcher-margin-left:-27%;
+    
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:44%;
     --pulse-watcher-width:15px;
     --pulse-watcher-height:15px;
+
     --watcher-arrow-width:28%;
     --watcher-arrow-top:52%;
     --watcher-arrow-left:58%;
+
     --watcher-text-font-sz:72px;
     --watcher-text-top:38%;
     --watcher-text-left:74%;
@@ -285,16 +297,19 @@ html {
     --container-listener-width: 109%;
     --container-listener-margin-left:32%;
     --container-listener-margin-top:50%;
-    --pulse-listener-top:60.5%;
-    --pulse-listener-left:59%;
+
+    --pulse-listener-top:61%;
+    --pulse-listener-left:56.7%;
     --pulse-listener-width:45px;
     --pulse-listener-height:45px;
-    --listener-arrow-width:50%;
-    --listener-arrow-top:52%;
-    --listener-arrow-left:50%;
-    --listener-text-font-sz:150px;
-    --listener-text-top:38%;
-    --listener-text-left:67%;
+
+    --listener-arrow-width:28%;
+    --listener-arrow-top:64%;
+    --listener-arrow-left:22%;
+
+    --listener-text-font-sz:72px;
+    --listener-text-top:54%;
+    --listener-text-left:4%;
 
   }
 
@@ -326,16 +341,20 @@ html {
     --container-listener-width: 100%;
     --container-listener-margin-left:0%;
     --container-listener-margin-top:120%;
+
     --pulse-listener-top:60.5%;
     --pulse-listener-left:59%;
     --pulse-listener-width:45px;
     --pulse-listener-height:45px;
+
     --listener-arrow-width:50%;
     --listener-arrow-top:52%;
-    --listener-arrow-left:50%;
+    --listener-arrow-left:-7%;
+    
     --listener-text-font-sz:150px;
-    --listener-text-top:38%;
-    --listener-text-left:67%;
+    --listener-text-top:40%;
+    --listener-text-left:-40%;
+
     --desktop-display-none:none;
 
 

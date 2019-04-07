@@ -7,11 +7,11 @@
     margin-top: -500px;
   }
   
-  .container .listener {
-    width: var(--containter-listener-width); /*responsive value tag*/
+.container .listener {
+    width: var(--container-listener-width); /*responsive value tag*/
     height: auto;
     margin-left: var(--container-listener-margin-left); /*responsive value tag*/
-    margin-top: var(--container-listener-margin-top); /*responsive value tag*/
+    margin-top: var(--container-listener-margin-top); 
   }
   
 
@@ -41,10 +41,10 @@
     top: var(--listener-arrow-top); 
     width: var(--listener-arrow-width); 
     left: var(--listener-arrow-left); 
-    -moz-transform: rotate(-19deg) scaleX(-1);
-    -o-transform: rotate(-19deg) scaleX(-1);
-    -webkit-transform: rotate(-19deg) scaleX(-1);
-    transform:rotate(-19deg) scaleX(-1);
+    -moz-transform: rotate(30deg) ;
+    -o-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg) ;
+    transform:rotate(8deg) ;
 }
 
 .listenerText{
@@ -57,12 +57,25 @@
     left: var( --listener-text-left); 
     -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
     -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
-    transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    transform: skewY(-20deg) skewX(10deg) rotate(12deg) ; 
   }
+
+  .listenTextMobile{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    cursor: pointer;
+    font-size:var(--watcher-text-font-sz);
+    top: var( --watcher-text-top); 
+    left: var( --watcher-text-left); 
+    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    transform: skewY(-27deg) skewX(10deg) rotate(29deg) ; 
+  }
+  
   
   h2:hover {
     color: #c6636c
-  } */
+  } 
 
 
 
@@ -94,3 +107,56 @@
       }
   }
 
+
+  .containerMobile {
+    width: 200px;
+    height: 100%;
+    margin: 0 auto 0;
+  }
+  
+  .pulse-button {
+  
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: none;
+    box-shadow: 0 0 0 0 #c6636c;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(https://s3-us-west-1.amazonaws.com/firebones-lz/listenerScan.png);
+    background-size: 140% 170%;
+    background-position: 46% 54%;
+  
+  
+    cursor: pointer;
+    -webkit-animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+  .pulse-button:hover 
+  {
+    -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+  }
+  
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  
+
+  @media only screen  and (min-width: 580px){
+      
+    .listenerMobile{
+        display:none;
+    }
+
+  }
+
+  @media only screen and (max-width: 579px) {
+    .container{
+        display:none;
+    }
+  }
+
+  
