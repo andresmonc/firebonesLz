@@ -12,13 +12,12 @@
           <div class="col-lg-10">
             <input type="email" name="name" class="form-control input mt-3" id="exampleInputEmail1"
               aria-describedby="emailHelp" placeholder="Enter your email" [(ngModel)]="email" required>
+              <small class="form-error" *ngIf="!validEmail && email.length > 0">Please enter a valid email address</small>
           </div>
           <div class="input-group-btn col-2">
-            <button type="submit" id="submitButton" class="btn btn-primary mt-3">Subscribe!</button>
-            <!-- <button type="submit" id="submitButton" [disabled]="(!emailForm.form.valid || formSubmitted)" class="btn btn-primary">Subscribe!</button> -->
+            <button type="submit" id="submitButton" [disabled]="(!validEmail || formSubmitted)"
+              class="btn btn-primary mt-3">Subscribe!</button>
           </div>
-
-
         </div>
       </div>
     </div>
