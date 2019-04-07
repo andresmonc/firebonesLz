@@ -1,101 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
 
-/* #videoSample{
-    position:relative;
-    height: 60vw;
-}
-
-
-#watcherImage{
-    position:absolute;
-    margin: 0;
-    right: 37%;
-    top:-29%;
-
- 
-}
-
-.pulse {
-    position:absolute;
-    margin: 0;
-    right: 56%;
-    top: 52%;
-
-
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #c6636c;
-    opacity:.6;
-    cursor: pointer;
-    box-shadow: 0 0 0 rgba(255, 165, 173, 0.712);
-    animation: pulse 2s infinite;
-  }
-  .pulse:hover {
-    animation: none;
-    background: #c6636c;
-    opacity:.8;
-    
-  }
-
-  
-  
-  @-webkit-keyframes pulse {
-    0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0.712);
-    }
-    70% {
-        -webkit-box-shadow: 0 0 0 10px rgba(255, 165, 173, 0);
-    }
-    100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0);
-    }
-  }
-  @keyframes pulse {
-    0% {
-        -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0.712);
-      }
-      70% {
-          -webkit-box-shadow: 0 0 0 90px rgba(255, 165, 173, 0);
-      }
-      100% {
-          -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0);
-      }
-  }
-
-
-  h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    position:absolute;
-
-    cursor: pointer;
-    font-size:var(--av-font-sz);
-    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
-    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
-    transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
-  }
-
-  h1:hover {
-    color: #c6636c
-  } */
-
 
 
   .container {
     position: relative;
     width: 100%;
     max-width: 500px;
+    margin-top: var(--container-watcher-margin-top);
+    
   }
   
   .container .watcher {
-    width: var(--containter-watcher-width); /*responsive value tag*/
+    width: var(--container-watcher-width); /*responsive value tag*/
     height: auto;
     margin-left: var(--container-watcher-margin-left); /*responsive value tag*/
   }
   
 
-  .pulse {
+  .container .pulse {
     position:absolute;
     text-align: center;
     top: var(--pulse-watcher-top); 
@@ -103,7 +25,7 @@
     width: var(--pulse-watcher-width); 
     height: var(--pulse-watcher-height); 
     border-radius: 50%;
-    background: #c6636c;
+    background: var(--eye-pulse-color); 
     opacity:.6;
     cursor: pointer;
     box-shadow: 0 0 0 rgba(255, 165, 173, 0.712);
@@ -139,6 +61,18 @@
     -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
     transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
   }
+
+  .watchTextMobile{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    cursor: pointer;
+    font-size:var(--watcher-text-font-sz);
+    top: var( --watcher-text-top); 
+    left: var( --watcher-text-left); 
+    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    transform: skewY(-27deg) skewX(10deg) rotate(29deg) ; 
+  }
   
   h2:hover {
     color: #c6636c
@@ -172,4 +106,56 @@
       100% {
           -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0);
       }
+  }
+
+
+  .containerMobile {
+    width: 200px;
+    height: 100%;
+    margin: 0 auto 0;
+  }
+  
+  .pulse-button {
+  
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: none;
+    box-shadow: 0 0 0 0 #c6636c;
+    border-radius: 50%;
+    background-color: black;
+    background-image: url(https://s3-us-west-1.amazonaws.com/firebones-lz/watcher%2Bscan.png);
+    background-size:150% 180%;
+    background-position:center;
+  
+  
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+  .pulse-button:hover 
+  {
+    -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+  }
+  
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  
+
+  @media only screen  and (min-width: 580px){
+      
+    .watcherMobile{
+        display:none;
+    }
+
+  }
+
+  @media only screen and (max-width: 579px) {
+    .container{
+        display:none;
+    }
   }

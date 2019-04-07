@@ -18,6 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+:root{
+  --eye-pulse-color:#c6636c;
+  --pulse-border-radius:50%;
+}
+
+
 /* mobile variables */
 @media only screen and (max-width: 740px) {
   :root {
@@ -134,9 +140,9 @@ html {
   :root {
 
     /*Video Components */
-    --containter-watcher-width: 230%;
+    --container-watcher-width: 230%;
     --container-watcher-margin-left:-130%;
-    --containter-watcher-arrow-width: 230%;
+    --container-watcher-arrow-width: 230%;
     --container-watcher-arrow-margin-left:-140%;
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:21%;
@@ -148,6 +154,20 @@ html {
     --watcher-text-font-sz:150px;
     --watcher-text-top:38%;
     --watcher-text-left:75%;
+
+    --container-listener-width: 230%;
+    --container-listener-margin-left:0%;
+    --pulse-listener-top:46.8%;
+    --pulse-listener-left:53.4%;
+    --pulse-listener-width:89px;
+    --pulse-listener-height:89px;
+    --listener-arrow-width:50%;
+    --listener-arrow-top:52%;
+    --listener-arrow-left:50%;
+    --listener-text-font-sz:150px;
+    --listener-text-top:38%;
+    --listener-text-left:67%;
+
 
     
 
@@ -162,7 +182,7 @@ html {
   :root {
 
     /*Video Components */
-    --containter-watcher-width: 200%;
+    --container-watcher-width: 200%;
     --container-watcher-margin-left:-100%;
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:31%;
@@ -175,6 +195,20 @@ html {
     --watcher-text-top:38%;
     --watcher-text-left:67%;
 
+    --container-listener-width: 200%;
+    --container-listener-margin-left:0%;
+    --pulse-listener-top:47.1%;
+    --pulse-listener-left:46.5%;
+    --pulse-listener-width:79px;
+    --pulse-listener-height:79px;
+    --listener-arrow-width:50%;
+    --listener-arrow-top:52%;
+    --listener-arrow-left:50%;
+    --listener-text-font-sz:150px;
+    --listener-text-top:38%;
+    --listener-text-left:67%;
+
+
   }
 
 }
@@ -186,7 +220,7 @@ html {
   :root {
 
     /*Video Components */
-    --containter-watcher-width: 180%;
+    --container-watcher-width: 180%;
     --container-watcher-margin-left:-80%;
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:38%;
@@ -200,6 +234,24 @@ html {
     --watcher-text-left:74%;
 
 
+    --container-listener-width: 180%;
+    --container-listener-margin-left:0%;
+    --pulse-listener-top:47.1%;
+    --pulse-listener-left:42.2%;
+    --pulse-listener-width:67px;
+    --pulse-listener-height:67px;
+    --listener-arrow-width:50%;
+    --listener-arrow-top:52%;
+    --listener-arrow-left:50%;
+    --listener-text-font-sz:150px;
+    --listener-text-top:38%;
+    --listener-text-left:67%;
+
+
+
+    
+
+
 
   }
 
@@ -210,7 +262,7 @@ html {
   :root {
 
     /*Video Components */
-    --containter-watcher-width: 109%;
+    --container-watcher-width: 109%;
     --container-watcher-margin-left:-27%;
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:44%;
@@ -223,6 +275,21 @@ html {
     --watcher-text-top:38%;
     --watcher-text-left:74%;
 
+
+    --container-listener-width: 109%;
+    --container-listener-margin-left:32%;
+    --container-listener-margin-top:50%;
+    --pulse-listener-top:60.5%;
+    --pulse-listener-left:59%;
+    --pulse-listener-width:45px;
+    --pulse-listener-height:45px;
+    --listener-arrow-width:50%;
+    --listener-arrow-top:52%;
+    --listener-arrow-left:50%;
+    --listener-text-font-sz:150px;
+    --listener-text-top:38%;
+    --listener-text-left:67%;
+
   }
 
 }
@@ -232,18 +299,41 @@ html {
   :root {
 
     /*Video Components */
-    --containter-watcher-width: 109%;
-    --container-watcher-margin-left:-27%;
-    --pulse-watcher-top:50.5%;
-    --pulse-watcher-left:44%;
-    --pulse-watcher-width:15px;
-    --pulse-watcher-height:15px;
+    --container-watcher-width: 100;
+    --container-watcher-margin-left:0;
+    --container-watcher-margin-top:30%;
+    --pulse-watcher-top:31%;
+    --pulse-watcher-left:27%;
+    --pulse-watcher-width:200px;
+    --pulse-watcher-height:200px;
     --watcher-arrow-width:15%;
     --watcher-arrow-top:52%;
     --watcher-arrow-left:58%;
-    --watcher-text-font-sz:58px;
-    --watcher-text-top:38%;
-    --watcher-text-left:60%;
+    --watcher-text-font-sz:80px;
+    --watcher-text-top:6%;
+    --watcher-text-left:28%;
+
+    --eye-pulse-color:#c6636b00;
+    --pulse-border-radius:80%;
+
+
+    --container-listener-width: 100%;
+    --container-listener-margin-left:0%;
+    --container-listener-margin-top:120%;
+    --pulse-listener-top:60.5%;
+    --pulse-listener-left:59%;
+    --pulse-listener-width:45px;
+    --pulse-listener-height:45px;
+    --listener-arrow-width:50%;
+    --listener-arrow-top:52%;
+    --listener-arrow-left:50%;
+    --listener-text-font-sz:150px;
+    --listener-text-top:38%;
+    --listener-text-left:67%;
+    --desktop-display-none:none;
+
+
+
 
   }
 

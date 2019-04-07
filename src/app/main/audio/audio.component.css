@@ -1,34 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
 
-#audioSample{
-    position:relative;
-}
-
-#drawnArrow{
-    position:absolute;
-    width:15vw;
-    margin-top: var(--listen-arrow-mt);
-    margin-left: var(--listen-arrow-ml);
-    -moz-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    -webkit-transform: rotate(10deg);
-    transform:rotate(10deg);
-}
-
-#listenerImage{
-    position:absolute;
-    margin-left:35%;
-    margin-top:-29%;
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-top: -500px;
+  }
+  
+  .container .listener {
+    width: var(--containter-listener-width); /*responsive value tag*/
     height: auto;
-    width: 1px;
-}
+    margin-left: var(--container-listener-margin-left); /*responsive value tag*/
+    margin-top: var(--container-listener-margin-top); /*responsive value tag*/
+  }
+  
 
-.pulse {
+  .pulse {
     position:absolute;
-    margin-top: var(--audio-dot-mt);
-    margin-left: var(--audio-dot-ml);
-    width: var(--audio-dot-w);
-    height: var(--audio-dot-w);
+    text-align: center;
+    top: var(--pulse-listener-top); 
+    left: var(--pulse-listener-left); 
+    width: var(--pulse-listener-width); 
+    height: var(--pulse-listener-height); 
     border-radius: 50%;
     background: #c6636c;
     opacity:.6;
@@ -42,7 +35,42 @@
     opacity:.8;
     
   }
+
+  #drawnArrow{
+    position:absolute;
+    top: var(--listener-arrow-top); 
+    width: var(--listener-arrow-width); 
+    left: var(--listener-arrow-left); 
+    -moz-transform: rotate(-19deg) scaleX(-1);
+    -o-transform: rotate(-19deg) scaleX(-1);
+    -webkit-transform: rotate(-19deg) scaleX(-1);
+    transform:rotate(-19deg) scaleX(-1);
+}
+
+.listenerText{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    position:absolute;
+    cursor: pointer;
+    font-size:var(--listener-text-font-sz);
+    top: var( --listener-text-top); 
+    left: var( --listener-text-left); 
+    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+  }
   
+  h2:hover {
+    color: #c6636c
+  } */
+
+
+
+  #audioModal{
+      padding-right:0px !important;
+  }
+
+    
   @-webkit-keyframes pulse {
     0% {
       -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0.712);
@@ -64,23 +92,5 @@
       100% {
           -webkit-box-shadow: 0 0 0 0 rgba(255, 165, 173, 0);
       }
-  }
-
-
-  h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    position:absolute;
-    margin-top: var(--listen-mt);
-    cursor: pointer;
-    margin-left: 21.5%;
-    font-size: var(--av-font-sz);
-    -ms-transform: skewY(-5deg) skewX(10deg) rotate(-3deg) ; /* IE 9 */
-    -webkit-transform: skewY(-5deg) skewX(10deg) rotate(-3deg) ;/* Safari */
-    transform: skewY(-5deg) skewX(10deg) rotate(-3deg) ; /* Standard syntax */
-  }
-
-  h1:hover {
-    color: #c6636c
   }
 
