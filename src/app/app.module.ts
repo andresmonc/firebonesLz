@@ -17,6 +17,7 @@ import { AudioComponent } from './main/audio/audio.component';
 import { VideoComponent } from './main/video/video.component';
 import { SubscribeComponent } from './main/subscribe/subscribe.component';
 import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.component';
+import { WhatIsFirebonesComponent } from './what-is-firebones/what-is-firebones.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.c
     AudioComponent,
     VideoComponent,
     SubscribeComponent,
-    StickyTopLogoComponent
+    StickyTopLogoComponent,
+    WhatIsFirebonesComponent
   ],
   imports: [
     BrowserModule,

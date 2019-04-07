@@ -6,7 +6,7 @@
   margin-right: var(--margin-right);
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
-  margin-top:325px;
+  margin-top:var(--about-section-margin-top);
 }
 
 h1 {
@@ -15,39 +15,23 @@ h1 {
 }
 
 #probablyWondering {
-  padding-top: 8px;
+  padding-top: var(--probably-wondering-padding-top);
   font-weight: 800;
   font-size: var(--about-probablywondering-whatisgo-whatisfire-font-sz);
 }
 
 #whatIsGo {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: var(--about-paragraph-padding-top);
   font-weight: 400;
   font-size: var(--about-probablywondering-whatisgo-whatisfire-font-sz);
 }
 
-#whatIsFire {
-  display: inline-block;
-  font-weight: 400;
-  font-size: var(--about-probablywondering-whatisgo-whatisfire-font-sz);
-}
-
-
-#goShowExplnation {
-  display: inline-block;
-  margin-left: 40%;
-  margin-right: 40%;
-}
-
-#fireBones {
-  font-weight: 900;
-}
 
 p {
   display: inline-block;
-  padding-top: 10px;
-  font-size: 18px;
+  padding-top: var(--about-paragraph-padding-top);
+  font-size: var(--about-paragraph-font-sz);
   text-align: left;
 }
 

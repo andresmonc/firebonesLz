@@ -65,6 +65,7 @@
   .watchTextMobile{
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
+    width:50%;
     cursor: pointer;
     font-size:var(--watcher-text-font-sz);
     top: var( --watcher-text-top); 

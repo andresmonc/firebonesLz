@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700,700i');
+
+
+
+#whatIsFireBones {
+    position: relative;
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top:325px;
+  }
+
+#whatIsFire {
+    display: inline-block;
+    font-weight: 400;
+    font-size: var(--about-probablywondering-whatisgo-whatisfire-font-sz);
+  }
+  
+  
+  #goShowExplnation {
+    display: inline-block;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+  
+  #fireBones {
+    font-weight: 900;
+  }

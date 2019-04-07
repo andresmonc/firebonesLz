@@ -33,30 +33,14 @@ html {
 /* mobile variables */
 @media only screen and (max-width: 740px) {
   :root {
-    /* about component */
-    --about-h1-font-sz: 5.2vw;
-    --about-probablywondering-whatisgo-whatisfire-font-sz: 5.2vw;
-    --about-paragraph-font-sz: 18px;
+
     /* Component Margins */
     --margin-left: 10%;
     --margin-right: 10%;
     /* ProgressBar */
     --nav-margin-left: -25px;
     --title-margin-bot: 2vh;
-    /* Audio/Video Components */
-    --av-image: 80vw;
-    --audio-dot-ml: 52%;
-    --audio-dot-mt: -55%;
-    --audio-dot-w: 45px;
-    --listen-mt: -64%;
-    --listen-arrow-mt: -50%;
-    --listen-arrow-ml: 36%;
-    --eye-pulse-size: 25px;
-    --video-dot-mt: -55%;
-    --video-dot-ml: 56.7%;
-    --watch-arrow-mt: -52%;
-    --watch-arrow-ml: 65%;
-    --watch-mt: -67%;
+
     /* StickyLogo Component */
     --logo-width: 14vw;
     --nav-font-sz: 38px;
@@ -70,29 +54,13 @@ html {
 @media only screen and (min-width: 741px) and (max-width: 1100px) {
 
   :root {
-    /* about component */
-    --about-h1-font-sz: 4.4vw;
-    --about-probablywondering-whatisgo-whatisfire-font-sz: 3.2vw;
-    --about-paragraph-font-sz: 18px;
+
     /* Component Margins */
     --margin-left: 20%;
     --margin-right: 20%;
     /* ProgressBar */
     --nav-margin-left: -5px;
-    /* Audio/Video Components */
-    --av-image: 60vw;
-    --audio-dot-ml: 48.5%;
-    --audio-dot-mt: -40.3%;
-    --audio-dot-w: 50px;
-    --listen-mt: -47%;
-    --listen-arrow-mt: -36%;
-    --listen-arrow-ml: 30%;
-    --eye-pulse-size: 30px;
-    --video-dot-mt: -40%;
-    --video-dot-ml: 44%;
-    --watch-arrow-mt: -39%;
-    --watch-arrow-ml: 52%;
-    --watch-mt: -50%;
+
     /* StickyLogo Component */
     --logo-width: 25vw;
     --nav-font-sz: 72px;
@@ -106,30 +74,14 @@ html {
 @media only screen and (min-width: 1101px) {
 
   :root {
-    /* about component */
-    --about-h1-font-sz: 2.2vw;
-    --about-probablywondering-whatisgo-whatisfire-font-sz: 1.6vw;
-    --about-paragraph-font-sz: 18px;
+
     /* Component Margins */
     --margin-left: 23%;
     --margin-right: 23%;
     /* ProgressBar */
     --nav-margin-left: -5px;
     --title-margin-bot: 50px; 
-    /* Audio/Video Components */
-    --av-image: 60vw;
-    --audio-dot-ml: 48.5%;
-    --audio-dot-mt: -39.3%;
-    --audio-dot-w: 90px;
-    --listen-mt: -45%;
-    --listen-arrow-mt: -36%;
-    --listen-arrow-ml: 30%;
-    --eye-pulse-size: 35px;
-    --video-dot-mt: -39.1%;
-    --video-dot-ml: 44.14%;
-    --watch-arrow-mt: -39%;
-    --watch-arrow-ml: 52%;
-    --watch-mt: -48.5%;
+
     /* StickyLogo Component */
     --logo-width: 18vw;
     --nav-font-sz: 72px;
@@ -139,11 +91,22 @@ html {
 
 }
 
-/**** START -- THESE STYLES PERTAIN TO ONLY AUDIO AND VIDEO COMPONENETS  -- START *****/
+
+/**** NEW GLOBAL STYLES START *****/
 
 @media only screen and (min-width: 1600px) {
 
   :root {
+
+    /*About Styles */
+    --about-section-margin-top:21.5%;
+    --about-h1-font-sz: 50px;
+
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 35px;
+    --probably-wondering-padding-top:2%;
+
+    --about-paragraph-padding-top: 4%;
+    --about-paragraph-font-sz: 22px;
 
     /*Video Components */
     --container-watcher-width: 230%;
@@ -190,6 +153,16 @@ html {
 
   :root {
 
+    /*About Styles */
+    --about-section-margin-top:370px;
+    --about-h1-font-sz: 43px;
+
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 30px;
+    --probably-wondering-padding-top:2%;
+
+    --about-paragraph-padding-top: 4%;
+    --about-paragraph-font-sz: 20px;
+
     /*Video Components */
     --container-watcher-width: 200%;
     --container-watcher-margin-left:-100%;
@@ -229,6 +202,16 @@ html {
 @media only screen and (min-width: 901px) and (max-width: 1099px) {
 
   :root {
+
+    /*About Styles */
+    --about-section-margin-top:370px;
+    --about-h1-font-sz: 43px;
+
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 30px;
+    --probably-wondering-padding-top:2%;
+
+    --about-paragraph-padding-top: 4%;
+    --about-paragraph-font-sz: 20px;
 
     /*Video Components */
     --container-watcher-width: 180%;
@@ -276,6 +259,17 @@ html {
 
   :root {
 
+
+    /*About Styles */
+    --about-section-margin-top:290px;
+    --about-h1-font-sz: 43px;
+
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 30px;
+    --probably-wondering-padding-top:2%;
+
+    --about-paragraph-padding-top: 4%;
+    --about-paragraph-font-sz: 20px;
+
     /*Video Components */
     --container-watcher-width: 109%;
     --container-watcher-margin-left:-27%;
@@ -319,17 +313,33 @@ html {
 
   :root {
 
+    --margin-left: 5%;
+    --margin-right: 5%;
+
+    --about-section-margin-top:65%;
+    --about-h1-font-sz: 24px;
+
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 18px;
+    --probably-wondering-padding-top:2%;
+
+    --about-paragraph-padding-top: 4%;
+    --about-paragraph-font-sz: 16px;
+
+
     /*Video Components */
     --container-watcher-width: 100;
     --container-watcher-margin-left:0;
     --container-watcher-margin-top:30%;
+
     --pulse-watcher-top:31%;
     --pulse-watcher-left:27%;
     --pulse-watcher-width:200px;
     --pulse-watcher-height:200px;
+
     --watcher-arrow-width:15%;
     --watcher-arrow-top:52%;
     --watcher-arrow-left:58%;
+
     --watcher-text-font-sz:80px;
     --watcher-text-top:6%;
     --watcher-text-left:28%;
@@ -356,6 +366,7 @@ html {
     --listener-text-left:-40%;
 
     --desktop-display-none:none;
+    --width-50:50%;
 
 
 
@@ -366,7 +377,7 @@ html {
 
 
 
-/**** END -- THESE STYLES PERTAIN TO ONLY AUDIO AND VIDEO COMPONENETS -- END *****/
+/**** NEW GLOBAL STYLES END *****/
 
 
 

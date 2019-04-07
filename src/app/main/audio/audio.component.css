@@ -64,6 +64,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     cursor: pointer;
+    width:50%;
     font-size:var(--watcher-text-font-sz);
     top: var( --watcher-text-top); 
     left: var( --watcher-text-left); 
