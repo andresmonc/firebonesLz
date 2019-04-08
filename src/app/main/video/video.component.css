@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
 
+.desktop-frame{
+  margin-left: -35%;;
+}
 
+.mobile-frame{
+  margin-left: -5%;
+}
 
   .container {
     position: relative;
