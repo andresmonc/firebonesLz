@@ -41,8 +41,7 @@ html {
     /* StickyLogo Component */
     --logo-width: 14vw;
     --nav-font-sz: 38px;
-    --subscribe-contact-h1: 50px;
-    --subscribe-contact-h2: 30px;
+
   }
 
 }
@@ -54,13 +53,13 @@ html {
 
 
     /* ProgressBar */
+    --title-margin-bot: 20px; 
     --nav-margin-left: -5px;
 
     /* StickyLogo Component */
     --logo-width: 25vw;
     --nav-font-sz: 72px;
-    --subscribe-contact-h1: 68px;
-    --subscribe-contact-h2: 2em;
+
   }
 
 }
@@ -74,13 +73,12 @@ html {
 
     /* ProgressBar */
     --nav-margin-left: -5px;
-    --title-margin-bot: 50px; 
+    --title-margin-bot: 40px; 
 
     /* StickyLogo Component */
     --logo-width: 18vw;
     --nav-font-sz: 72px;
-    --subscribe-contact-h1: 68px;
-    --subscribe-contact-h2: 2em;
+
   }
 
 }
@@ -91,6 +89,14 @@ html {
 @media only screen and (min-width: 1600px) {
 
   :root {
+    --margin-message-left-box:15px;
+    --margin-message-right-box:-15px;
+
+    --input-msg-margin-right:27px;
+
+    --subscribe-contact-h1: 68px;
+    --subscribe-contact-h2: 2em;
+    --subscribe-contact-p: 18px;
 
     --margin-left: 23%;
     --margin-right: 23%;
@@ -162,6 +168,15 @@ html {
 
   :root {
 
+    --margin-message-left-box:15px;
+    --margin-message-right-box:-15px;
+
+    --input-msg-margin-right:27px;
+
+    --subscribe-contact-h1: 68px;
+    --subscribe-contact-h2: 2em;
+    --subscribe-contact-p: 18px;
+
     --margin-left: 20%;
     --margin-right: 20%;
 
@@ -223,6 +238,13 @@ html {
 @media only screen and (min-width: 901px) and (max-width: 1099px) {
 
   :root {
+
+    --margin-message-left-box:15px;
+    --margin-message-right-box:-15px;
+
+    --subscribe-contact-h1: 60px;
+    --subscribe-contact-h2: 1.7em;
+    --subscribe-contact-p: 18px;
 
     --margin-left: 17%;
     --margin-right: 17%;
@@ -292,6 +314,13 @@ html {
 
   :root {
 
+    --margin-message-left-box:15px;
+    --margin-message-right-box:-15px;
+
+    --subscribe-contact-h1: 40px;
+    --subscribe-contact-h2: 18px;
+    --subscribe-contact-p: 18px;
+
     --margin-left: 10%;
     --margin-right: 10%;
 
@@ -357,9 +386,20 @@ html {
 @media only screen and (max-width: 579px) {
 
   :root {
+    --subscribe-contact-h1: 40px;
+    --subscribe-contact-h2: 18px;  
+    --subscribe-contact-p: 16px;
+    
 
-    --margin-left: 5%;
-    --margin-right: 5%;
+
+    --email-margin:5%;
+  
+
+    --margin-message-left-box:0px;
+    --margin-message-right-box:0px;
+
+    --margin-left: 7%;
+    --margin-right: 7%;
 
     --about-section-margin-top:70%;
     --about-h1-font-sz: 24px;

@@ -28,6 +28,8 @@ h2 {
   margin-bottom: var(--title-margin-bot);
   text-align: center;
   font-size: var(--subscribe-contact-h2);
+  margin-left:var(--email-margin);
+  margin-right:var(--email-margin);
 }
 
 .firebones {
@@ -96,10 +98,19 @@ textarea:focus {
 }
 
 .form-control {
-  font-size: 18px;
+  font-size:var(--subscribe-contact-p)
 }
 
 
-#inputMessage {
-  margin-right: 28px;
+/* #inputMessage {
+  margin-right:var( --input-msg-margin-right);
+} */
+
+.row{
+  margin-right:var(  --margin-left-message-box);
+  margin-left:var(  --margin-right-message-box);
+}
+
+#contactSubmit{
+  margin-left:15px
 }

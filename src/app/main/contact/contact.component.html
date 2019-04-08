@@ -29,8 +29,8 @@
             <small class="form-error" *ngIf="!validMessage && message.length > 0">Please enter a valid message</small>
         </div>
       </div>
-      <div class="row ml-1">
-        <button type="submit" class="btn btn-primary" [disabled]="(!validName || !validEmail || !validMessage || formSubmitted)">Submit</button>
+      <div class="row">
+        <button type="submit" id="contactSubmit" class="btn btn-primary" [disabled]="(!validName || !validEmail || !validMessage || formSubmitted)">Submit</button>
       </div>
     </div>
 
