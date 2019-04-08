@@ -45,9 +45,9 @@ audio{
     top: var(--listener-arrow-top); 
     width: var(--listener-arrow-width); 
     left: var(--listener-arrow-left); 
-    -moz-transform: rotate(30deg) ;
-    -o-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg) ;
+    -moz-transform: rotate(8deg) ;
+    -o-transform: rotate(8deg);
+    -webkit-transform: rotate(8deg) ;
     transform:rotate(8deg) ;
 }
 
@@ -59,8 +59,8 @@ audio{
     font-size:var(--listener-text-font-sz);
     top: var( --listener-text-top); 
     left: var( --listener-text-left); 
-    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
-    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    -ms-transform: skewY(-20deg) skewX(10deg) rotate(12deg) ; 
+    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(12deg) ; 
     transform: skewY(-20deg) skewX(10deg) rotate(12deg) ; 
   }
 
@@ -72,8 +72,8 @@ audio{
     font-size:var(--watcher-text-font-sz);
     top: var( --watcher-text-top); 
     left: var( --watcher-text-left); 
-    -ms-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
-    -webkit-transform: skewY(-20deg) skewX(10deg) rotate(29deg) ; 
+    -ms-transform: skewY(-27deg) skewX(10deg) rotate(29deg) ; 
+    -webkit-transform: skewY(-27deg) skewX(10deg) rotate(29deg) ; 
     transform: skewY(-27deg) skewX(10deg) rotate(29deg) ; 
   }
   
