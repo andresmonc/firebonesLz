@@ -58,7 +58,7 @@ export class ContactComponent implements OnInit {
     } else {
       this.validName = true;
     }
-    if (this.message.length > 0 && this.message.length <= 10) {
+    if (this.message.length <= 0) {
       this.validMessage = false;
     } else {
       this.validMessage = true;
