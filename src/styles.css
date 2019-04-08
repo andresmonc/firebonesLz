@@ -34,9 +34,6 @@ html {
 @media only screen and (max-width: 740px) {
   :root {
 
-    /* Component Margins */
-    --margin-left: 10%;
-    --margin-right: 10%;
     /* ProgressBar */
     --nav-margin-left: -25px;
     --title-margin-bot: 2vh;
@@ -55,9 +52,7 @@ html {
 
   :root {
 
-    /* Component Margins */
-    --margin-left: 20%;
-    --margin-right: 20%;
+
     /* ProgressBar */
     --nav-margin-left: -5px;
 
@@ -75,9 +70,8 @@ html {
 
   :root {
 
-    /* Component Margins */
-    --margin-left: 23%;
-    --margin-right: 23%;
+
+
     /* ProgressBar */
     --nav-margin-left: -5px;
     --title-margin-bot: 50px; 
@@ -98,6 +92,9 @@ html {
 
   :root {
 
+    --margin-left: 23%;
+    --margin-right: 23%;
+
     /*About Styles */
     --about-section-margin-top:21.5%;
     --about-h1-font-sz: 50px;
@@ -107,6 +104,18 @@ html {
 
     --about-paragraph-padding-top: 4%;
     --about-paragraph-font-sz: 22px;
+
+    --about-part-2-margin-top:21.5%;
+    
+    /*About Styles 2*/
+
+    --about-2-margin-top:18%;
+    --about-2-header-sz:50px;
+    
+    --about-2-text-sz:20px;
+    --about-2-text-margin-top:3%;
+
+
 
     /*Video Components */
     --container-watcher-width: 230%;
@@ -153,6 +162,9 @@ html {
 
   :root {
 
+    --margin-left: 20%;
+    --margin-right: 20%;
+
     /*About Styles */
     --about-section-margin-top:370px;
     --about-h1-font-sz: 43px;
@@ -162,6 +174,15 @@ html {
 
     --about-paragraph-padding-top: 4%;
     --about-paragraph-font-sz: 20px;
+
+
+        /*About Styles 2*/
+        --about-2-margin-top:20%;
+        --about-2-header-sz:50px;
+        
+        --about-2-text-sz:20px;
+        --about-2-text-margin-top:3%;
+    
 
     /*Video Components */
     --container-watcher-width: 200%;
@@ -203,6 +224,9 @@ html {
 
   :root {
 
+    --margin-left: 17%;
+    --margin-right: 17%;
+
     /*About Styles */
     --about-section-margin-top:370px;
     --about-h1-font-sz: 43px;
@@ -212,6 +236,15 @@ html {
 
     --about-paragraph-padding-top: 4%;
     --about-paragraph-font-sz: 20px;
+
+
+      /*About Styles 2*/
+      --about-2-margin-top:25%;
+      --about-2-header-sz:50px;
+      
+      --about-2-text-sz:20px;
+      --about-2-text-margin-top:3%;
+  
 
     /*Video Components */
     --container-watcher-width: 180%;
@@ -259,16 +292,28 @@ html {
 
   :root {
 
+    --margin-left: 10%;
+    --margin-right: 10%;
+
 
     /*About Styles */
-    --about-section-margin-top:290px;
-    --about-h1-font-sz: 43px;
+    --about-section-margin-top:295px;
+    --about-h1-font-sz: 34px;
 
-    --about-probablywondering-whatisgo-whatisfire-font-sz: 30px;
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 28px;
     --probably-wondering-padding-top:2%;
 
     --about-paragraph-padding-top: 4%;
     --about-paragraph-font-sz: 20px;
+
+    /*About Styles 2*/
+
+    --about-2-margin-top:50%;
+    --about-2-header-sz:43px;
+    
+    --about-2-text-sz:20px;
+    --about-2-text-margin-top:3%;
+        
 
     /*Video Components */
     --container-watcher-width: 109%;
@@ -316,7 +361,7 @@ html {
     --margin-left: 5%;
     --margin-right: 5%;
 
-    --about-section-margin-top:65%;
+    --about-section-margin-top:70%;
     --about-h1-font-sz: 24px;
 
     --about-probablywondering-whatisgo-whatisfire-font-sz: 18px;
@@ -324,6 +369,12 @@ html {
 
     --about-paragraph-padding-top: 4%;
     --about-paragraph-font-sz: 16px;
+
+    --about-2-margin-top:100%;
+    --about-2-header-sz:24px;
+    
+    --about-2-text-sz:16px;
+    --about-2-text-margin-top:3%;
 
 
     /*Video Components */

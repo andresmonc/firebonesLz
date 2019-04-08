@@ -8,20 +8,22 @@
     margin-right: var(--margin-right);
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    margin-top:325px;
+    margin-top:var(--about-2-margin-top);
   }
 
 #whatIsFire {
     display: inline-block;
     font-weight: 400;
-    font-size: var(--about-probablywondering-whatisgo-whatisfire-font-sz);
+    font-size: var(--about-2-header-sz);
   }
   
   
-  #goShowExplnation {
+  #goShowExplanation {
+    margin-top: var(--about-2-text-margin-top);
     display: inline-block;
-    margin-left: 40%;
-    margin-right: 40%;
+    font-size: var(--about-2-text-sz);
+    text-align: left;
+    text-indent: 4%;
   }
   
   #fireBones {
