@@ -33,6 +33,13 @@
   a.anchor {
     display: block;
     position: relative;
-    top: -210px;;
+    top: -280px;;
     visibility: hidden;
+}
+
+@media only screen and (max-width: 579px) {
+    a.anchor {
+        top: -200px;
+    }
+
 }
