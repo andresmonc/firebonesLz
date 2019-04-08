@@ -29,7 +29,6 @@ export class apiReturnService {
   }
 
   public postSubscribe(email) {
-    console.log('hifrom service')
     const apiEndpoint = this.serverAPI + '/fireBonesSubscribe'
     const body = JSON.stringify({
       "body": {

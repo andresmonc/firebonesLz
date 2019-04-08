@@ -24,7 +24,7 @@ export class ProgressBarComponent implements OnInit {
   private subscribeOffset: number;
 
   public loadBar: boolean = false;
-  private triggerBeforeElem: number = 200;
+  private triggerBeforeElem: number = 100;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -32,8 +32,8 @@ export class ProgressBarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.videoOffset = (this.document.getElementById('videoSample').offsetTop) - this.triggerBeforeElem;
-    this.audioOffset = (this.document.getElementById('audioSample').offsetTop) - this.triggerBeforeElem;
+    this.videoOffset = (this.document.getElementById('videoSection').offsetTop) - this.triggerBeforeElem;
+    this.audioOffset = (this.document.getElementById('audioSection').offsetTop) - this.triggerBeforeElem;
     this.aboutOffset = (this.document.getElementById('about').offsetTop) - this.triggerBeforeElem;
     this.subscribeOffset = (this.document.getElementById('subscribe').offsetTop) - this.triggerBeforeElem;
     this.contactOffset = (this.document.getElementById('contact').offsetTop) - this.triggerBeforeElem;

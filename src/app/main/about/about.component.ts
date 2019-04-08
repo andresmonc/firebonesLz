@@ -14,9 +14,9 @@ export class AboutComponent implements OnInit {
 
   private arrowFadepoint: number;
 
-  constructor(    
-  @Inject(DOCUMENT) private document: Document,
-  @Inject(WINDOW) private window: Window
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(WINDOW) private window: Window
   ) { }
 
   ngOnInit() {
@@ -25,16 +25,12 @@ export class AboutComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-  
-    let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
-    console.log("scroll numb",number);
-    if (number >=  this.arrowFadepoint ) {
-      console.log("arrow fade true")
-      this.arrowFade = true;
 
+    let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
+    if (number >= this.arrowFadepoint) {
+      this.arrowFade = true;
     }
-    else{
-      console.log("arrow fade false")
+    else {
       this.arrowFade = false;
     }
 
