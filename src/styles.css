@@ -203,34 +203,30 @@ html {
     
 
     /*Video Components */
-    --container-watcher-width: 200%;
-    --container-watcher-margin-left:-100%;
-    --pulse-watcher-top:50.8%;
-    --pulse-watcher-left:31%;
-    --pulse-watcher-width:28px;
-    --pulse-watcher-height:28px;
-    --watcher-arrow-width:50%;
-    --watcher-arrow-top:52%;
-    --watcher-arrow-left:50%;
-    --watcher-text-font-sz:150px;
-    --watcher-text-top:38%;
-    --watcher-text-left:67%;
-
-    --container-listener-width: 200%;
-    --container-listener-margin-left:0%;
-
-    --pulse-listener-top:47.1%;
-    --pulse-listener-left:46.5%;
-    --pulse-listener-width:79px;
-    --pulse-listener-height:79px;
-
-    --listener-arrow-width:50%;
-    --listener-arrow-top:52%;
-    --listener-arrow-left:-7%;
-
-    --listener-text-font-sz:150px;
-    --listener-text-top:40%;
-    --listener-text-left:-40%;
+    --container-watcher-width: 160%;
+    --container-watcher-margin-left: -70%;
+    --pulse-watcher-top: 50.6%;
+    --pulse-watcher-left: 34.4%;
+    --pulse-watcher-width: 26px;
+    --pulse-watcher-height: 26px;
+    --watcher-arrow-width: 41%;
+    --watcher-arrow-top: 50%;
+    --watcher-arrow-left: 50%;
+    --watcher-text-font-sz: 120px;
+    --watcher-text-top: 35%;
+    --watcher-text-left: 64%;
+    --container-listener-width: 160%;
+    --container-listener-margin-left: 5%;
+    --pulse-listener-top: 46.1%;
+    --pulse-listener-left: 41.5%;
+    --pulse-listener-width: 79px;
+    --pulse-listener-height: 79px;
+    --listener-arrow-width: 41%;
+    --listener-arrow-top: 50%;
+    --listener-arrow-left: -4%;
+    --listener-text-font-sz: 120px;
+    --listener-text-top: 36%;
+    --listener-text-left: -25%;
 
   }
 
@@ -272,38 +268,30 @@ html {
   
 
     /*Video Components */
-    --container-watcher-width: 180%;
-    --container-watcher-margin-left:-80%;
-
-    --pulse-watcher-top:50.8%;
-    --pulse-watcher-left:38%;
-    --pulse-watcher-width:25px;
-    --pulse-watcher-height:25px;
-
-    --watcher-arrow-width:40%;
-    --watcher-arrow-top:52%;
-    --watcher-arrow-left:58%;
-
-    --watcher-text-font-sz:115px;
-    --watcher-text-top:38%;
-    --watcher-text-left:69%;
-
-
-    --container-listener-width: 180%;
-    --container-listener-margin-left:0%;
-
-    --pulse-listener-top:47.1%;
-    --pulse-listener-left:42.2%;
-    --pulse-listener-width:67px;
-    --pulse-listener-height:67px;
-
-    --listener-arrow-width:40%;
-    --listener-arrow-top:52%;
-    --listener-arrow-left:-7%;
-
-    --listener-text-font-sz:115px;
-    --listener-text-top:40%;
-    --listener-text-left:-25%;
+    --container-watcher-width: 140%;
+    --container-watcher-margin-left: -58%;
+    --pulse-watcher-top: 50.6%;
+    --pulse-watcher-left: 33.7%;
+    --pulse-watcher-width: 22px;
+    --pulse-watcher-height: 22px;
+    --watcher-arrow-width: 40%;
+    --watcher-arrow-top: 52%;
+    --watcher-arrow-left: 50%;
+    --watcher-text-font-sz: 93px;
+    --watcher-text-top: 38%;
+    --watcher-text-left: 69%;
+    --container-listener-width: 140%;
+    --container-listener-margin-left: 4%;
+    --pulse-listener-top: 46.1%;
+    --pulse-listener-left: 36.2%;
+    --pulse-listener-width: 67px;
+    --pulse-listener-height: 67px;
+    --listener-arrow-width: 40%;
+    --listener-arrow-top: 52%;
+    --listener-arrow-left: -7%;
+    --listener-text-font-sz: 93px;
+    --listener-text-top: 39%;
+    --listener-text-left: -25%;
 
     
 
