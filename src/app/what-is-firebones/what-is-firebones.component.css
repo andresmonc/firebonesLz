@@ -29,3 +29,10 @@
   #fireBones {
     font-weight: 900;
   }
+
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -210px;;
+    visibility: hidden;
+}

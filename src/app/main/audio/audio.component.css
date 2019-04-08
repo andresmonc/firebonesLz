@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
 
+audio{
+  margin-left: auto;
+  margin-right: auto;
+}
 .container {
     position: relative;
     width: 100%;
