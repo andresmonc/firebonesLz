@@ -23,11 +23,13 @@
       
       
       
-      <div class="modal fade" id="audioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="audioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" (click)="stopAudio()">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
+          <div class="modal-content" style="background-color: transparent; border-color: transparent;">
     
-            <h2>AUDIO GOES HERE</h2>
+            <audio controls id="audio-file" >
+              <source src="https://s3-us-west-1.amazonaws.com/firebones-lz/GO+BODY+WEB+dialoge+only+.wav" type="audio/wav">
+            </audio>
     
           </div>
         </div>

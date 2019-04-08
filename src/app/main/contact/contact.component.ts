@@ -47,6 +47,7 @@ export class ContactComponent implements OnInit {
     };
   }
 
+  
   @HostListener('keydown') onKeydown() {
     if (this.email.length > 0 && this.email.match('@') && this.email.match('\\.')) {
       this.validEmail = true;
