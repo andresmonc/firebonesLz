@@ -24,7 +24,7 @@ export class ProgressBarComponent implements OnInit {
   private subscribeOffset: number;
 
   public loadBar: boolean = false;
-  private triggerBeforeElem: number = 100;
+  private triggerBeforeElem: number = 0;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -35,13 +35,15 @@ export class ProgressBarComponent implements OnInit {
     this.videoOffset = (this.document.getElementById('videoSection').offsetTop) - this.triggerBeforeElem;
     this.audioOffset = (this.document.getElementById('audioSection').offsetTop) - this.triggerBeforeElem;
     this.aboutOffset = (this.document.getElementById('about').offsetTop) - this.triggerBeforeElem;
-    this.subscribeOffset = (this.document.getElementById('subscribe').offsetTop) - this.triggerBeforeElem;
-    this.contactOffset = (this.document.getElementById('contact').offsetTop) - this.triggerBeforeElem;
+    this.subscribeOffset = (this.document.getElementById('subscribe').offsetTop) - 500;
+    this.contactOffset = (this.document.getElementById('contact').offsetTop) - 500;
   }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
+    console.log(this.subscribeOffset)
     let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
+    console.log("current scroll Pos: "+ number)
     if (number >= this.aboutOffset && number <= this.videoOffset) {
       this.section1 = true;
       this.section2 = false;
