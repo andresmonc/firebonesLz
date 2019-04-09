@@ -12,7 +12,8 @@
     position: relative;
     width: 100%;
     max-width: 500px;
-    margin-top: var(--container-watcher-margin-top);
+    margin-top: -500px;
+
     
   }
   
@@ -151,6 +152,15 @@
   @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
   @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
   @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
+  @media only screen  and (min-width: 580px) and (max-width: 900px) {
+
+    .container {
+      margin-top: -244px;
+      
+    }
+  }
   
 
   @media only screen  and (min-width: 580px){
@@ -166,3 +176,4 @@
         display:none;
     }
   }
+

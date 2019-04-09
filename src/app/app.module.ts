@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { ProgressBarComponent } from './nav/progress-bar/progress-bar.component';
 import { WINDOW_PROVIDERS } from "./services/window.service";
 import { ContactComponent } from './main/contact/contact.component';
-
+import {NgsRevealModule} from 'ng-scrollreveal';
 
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +18,8 @@ import { VideoComponent } from './main/video/video.component';
 import { SubscribeComponent } from './main/subscribe/subscribe.component';
 import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.component';
 import { WhatIsFirebonesComponent } from './what-is-firebones/what-is-firebones.component';
+
+
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { WhatIsFirebonesComponent } from './what-is-firebones/what-is-firebones.
     AppRoutingModule,
     HttpModule, 
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgsRevealModule.forRoot()
   ],
   providers: [WINDOW_PROVIDERS],
   bootstrap: [AppComponent]

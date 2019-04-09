@@ -338,6 +338,11 @@ html {
     /*Video Components */
     --container-watcher-width: 109%;
     --container-watcher-margin-left:-27%;
+    --container-watcher-margin-top: -270px;
+  
+  
+  
+    
     
     --pulse-watcher-top:50.8%;
     --pulse-watcher-left:44%;
