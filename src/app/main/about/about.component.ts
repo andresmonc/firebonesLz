@@ -2,7 +2,6 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { Inject } from "@angular/core";
 import { DOCUMENT } from "@angular/platform-browser";
 import { WINDOW } from "../../services/window.service";
-import { ScrollService } from "../../services/scroll-service.service";
 
 
 @Component({
@@ -18,21 +17,11 @@ export class AboutComponent implements OnInit {
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    @Inject(WINDOW) private window: Window,
-    private scrollservice: ScrollService
+    @Inject(WINDOW) private window: Window
   ) { }
 
   ngOnInit() {
-    this.arrowFadepoint = 20
-    // this.scrollservice.scroll
-    
-  }
-
-
-  scroll2(el) {
-    console.log(el)
-    let element = this.document.getElementById(el);
-    element.scrollIntoView();
+    this.arrowFadepoint = 20    
   }
 
   @HostListener("window:scroll", [])

@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   background-image: url("https://s3-us-west-1.amazonaws.com/firebones-lz/paperPattern.png");
   margin-left: 0;
