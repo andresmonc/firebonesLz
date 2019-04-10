@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT } from "@angular/platform-browser";
-import { WINDOW } from "../window.service";
+import { WINDOW } from "../../services/window.service";
 
 @Component({
   selector: 'app-audio',

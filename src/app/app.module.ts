@@ -13,11 +13,11 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './main/about/about.component';
 import { FooterComponent } from './footer/footer.component';
-import { AudioComponent } from './services/audio/audio.component';
+import { AudioComponent } from './main/audio/audio.component';
 import { VideoComponent } from './main/video/video.component';
 import { SubscribeComponent } from './main/subscribe/subscribe.component';
 import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.component';
-import { WhatIsFirebonesComponent } from './what-is-firebones/what-is-firebones.component';
+import { WhatIsFirebonesComponent } from './main/what-is-firebones/what-is-firebones.component';
 
 
 
