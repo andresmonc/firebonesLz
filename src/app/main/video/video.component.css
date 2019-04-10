@@ -170,6 +170,7 @@ iframe{
   @media only screen and (max-width: 579px) {
     .container{
         display:none;
+        
     }
   }
 

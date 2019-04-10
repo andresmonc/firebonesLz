@@ -19,6 +19,8 @@ audio{
   }
   
 
+  
+  
   .pulse {
     position:absolute;
     text-align: center;
@@ -162,6 +164,9 @@ audio{
     .container{
         display:none;
     }
+
+    
+
   }
 
   
