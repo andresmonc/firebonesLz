@@ -10,7 +10,7 @@ import { WINDOW } from "../../services/window.service";
 export class AudioComponent implements OnInit {
 
   private hidden: boolean = true;
-  private audio = this.document.getElementById("audio-file")
+  private audio
   constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject(WINDOW) private window: Window
@@ -19,15 +19,15 @@ export class AudioComponent implements OnInit {
 
 
   ngOnInit() {
-
-
+    this.audio = this.document.getElementById("audio-file")
+    console.log(this.audio)
   }
 
 
 
-stopAudio(){
-  this.document.getElementById('audio-file')
-}
+  stopAudio() {
+    this.audio.pause();
+  }
 
 
 }
