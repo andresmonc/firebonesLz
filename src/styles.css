@@ -384,7 +384,7 @@ html {
 
 }
 
-@media only screen and (max-width: 579px) {
+@media only screen and (min-width: 400px) and (max-width: 579px) {
 
   :root {
     --subscribe-contact-h1: 40px;
@@ -460,14 +460,89 @@ html {
     --desktop-display-none:none;
     --width-50:50%;
 
-
-
-
   }
 
 }
 
+@media only screen and (max-width: 399px) {
 
+  :root {
+    --subscribe-contact-h1: 40px;
+    --subscribe-contact-h2: 18px;  
+    --subscribe-contact-p: 16px;
+    
+
+
+    --email-margin:5%;
+  
+
+    --margin-message-left-box:0px;
+    --margin-message-right-box:0px;
+
+    --margin-left: 7%;
+    --margin-right: 7%;
+
+    --about-section-margin-top:50%;
+    --about-h1-font-sz: 24px;
+
+    --about-probablywondering-whatisgo-whatisfire-font-sz: 18px;
+    --probably-wondering-padding-top:2%;
+
+    --about-paragraph-padding-top: 4%;
+    --about-paragraph-font-sz: 16px;
+
+    --about-2-margin-top:100%;
+    --about-2-header-sz:24px;
+    
+    --about-2-text-sz:16px;
+    --about-2-text-margin-top:3%;
+
+
+    /*Video Components */
+    --container-watcher-width: 100;
+    --container-watcher-margin-left:0;
+    --container-watcher-margin-top:30%;
+
+    --pulse-watcher-top:31%;
+    --pulse-watcher-left:27%;
+    --pulse-watcher-width:200px;
+    --pulse-watcher-height:200px;
+
+    --watcher-arrow-width:15%;
+    --watcher-arrow-top:52%;
+    --watcher-arrow-left:58%;
+
+    --watcher-text-font-sz:80px;
+    --watcher-text-top:6%;
+    --watcher-text-left:28%;
+
+    --eye-pulse-color:#c6636b00;
+    --pulse-border-radius:80%;
+
+
+    --container-listener-width: 100%;
+    --container-listener-margin-left:0%;
+    --container-listener-margin-top:120%;
+
+    --pulse-listener-top:60.5%;
+    --pulse-listener-left:59%;
+    --pulse-listener-width:45px;
+    --pulse-listener-height:45px;
+
+    --listener-arrow-width:50%;
+    --listener-arrow-top:52%;
+    --listener-arrow-left:-7%;
+    
+    --listener-text-font-sz:150px;
+    --listener-text-top:40%;
+    --listener-text-left:-40%;
+
+    --desktop-display-none:none;
+    --width-50:50%;
+
+  }
+
+}
 
 /**** NEW GLOBAL STYLES END *****/
 

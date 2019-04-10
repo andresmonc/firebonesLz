@@ -8,6 +8,7 @@ import { ProgressBarComponent } from './nav/progress-bar/progress-bar.component'
 import { WINDOW_PROVIDERS } from "./services/window.service";
 import { ContactComponent } from './main/contact/contact.component';
 import {NgsRevealModule} from 'ng-scrollreveal';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -41,6 +42,7 @@ import { WhatIsFirebonesComponent } from './main/what-is-firebones/what-is-fireb
     HttpModule, 
     FormsModule,
     HttpClientModule,
+    ScrollToModule.forRoot(),
     NgsRevealModule.forRoot()
   ],
   providers: [WINDOW_PROVIDERS],

@@ -53,7 +53,7 @@
   }
   
   
-  @media screen and (max-width: 900px) {
+  @media screen and (min-width: 400px) and (max-width: 900px) {
 
     #logo{
       width: 165px;
@@ -78,3 +78,31 @@
     
     
   }
+
+
+  
+@media only screen and (max-width: 399px) {
+
+  #navbar a {
+    font-size: 18px; 
+  }
+
+  #logo{
+    width: 120px;
+  }
+
+  #navbar{
+    width: 76%;
+    left: 12.5%;
+  }
+
+
+  .bringTextCloserRight{
+    margin-right: -37px;
+  }
+
+  .bringTextCloserLeft{
+    margin-left: -22px;
+  }
+  
+}
