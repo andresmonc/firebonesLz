@@ -35,14 +35,18 @@ export class ProgressBarComponent implements OnInit {
     this.aboutOffset = (this.document.getElementById('about').offsetTop);
     this.whatIsOffset = (this.document.getElementById('whatIsFireBones').offsetTop);
     this.audioOffset = (this.document.getElementById('audioSection').offsetTop);
-    this.videoOffset = (this.document.getElementById('videoSection').offsetTop + 100);
-    this.subscribeOffset = (this.document.getElementById('subscribe').offsetTop);
+    this.videoOffset = (this.audioOffset + 600);
+    this.subscribeOffset = (this.videoOffset + 800);
     this.contactOffset = (this.document.getElementById('contact').offsetTop);
     this.activeDot()
+    console.log("audio:",this.audioOffset)
+    console.log("video:",this.videoOffset)
+    console.log("subscribe:",this.subscribeOffset)
   }
 
   activeDot() {
     let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
+    console.log(number)
     if (number <= this.aboutOffset) {
       this.section6 = false;
       this.section1 = true;
