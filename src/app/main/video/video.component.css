@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400i');
 
 iframe{
-  display:block;
-  margin: auto;
+  display: inline-block;
+  text-align: center;
+  
 }
   .container {
     position: relative;
@@ -29,12 +30,21 @@ iframe{
     height: var(--pulse-watcher-height); 
     border-radius: 50%;
     background: var(--eye-pulse-color); 
-    opacity:.6;
+    opacity: 0.6 !important; /* Standard compliant browsers */
+    -moz-opacity: 0.6; /* Firefox and Mozilla browsers */
+    -webkit-opacity: 0.60; /* WebKit browser e.g. Safari */
+    filter: alpha(opacity=60); /* For IE8 and earlier */
     cursor: pointer;
     box-shadow: 0 0 0 rgba(255, 165, 173, 0.712);
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
     animation: pulse 2s infinite;
   }
   .pulse:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
     animation: none;
     background: #c6636c;
     opacity:.8;
