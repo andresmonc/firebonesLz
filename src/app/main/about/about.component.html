@@ -1,28 +1,22 @@
 <div id="about">
 
-  <h1>The World’s First-Ever Go-Show!</h1>
+  <h2 class="first" id="firstEver">The World’s First-Ever Go-Show!</h2>
 
-  <h2 id="probablyWondering">You’re probably wondering … </h2>
+  <h2 class="second" id="probablyWondering">You’re probably wondering … </h2>
 
-  <h2 id="whatIsGo">
+  <h2 class="third" id="whatIsGo">
     <i>What is a </i>
     <b>go-show</b>
     <i>?</i>
   </h2>
 
-  <p id="goShowExplanation">
-    Do you crave a captivating podcast?
-    Do you need some beautiful video in your life?
-    If so, you’re in luck!
-    Packaged in a digital app for mobile devices,
-    a new form known as the go-show combines videos
-    and podcasts to tell one fascinating story.
-  </p>
 </div>
 
-
-
-
-
-  <div [ngx-scroll-to]="'whatIsFireBones'" [ngx-scroll-to-duration]="ngxScrollToDuration" [ngx-scroll-to-offset-map]="ngxScrollToOffsetMap" [ngClass]="{'fadeOut': arrowFade, 'fadeIn': !arrowFade }" class="arrow bounce">
+  <div 
+  [ngx-scroll-to]="'whatIsFireBones'" 
+  [ngx-scroll-to-duration]="ngxScrollToDuration" 
+  [ngx-scroll-to-offset-map]="ngxScrollToOffsetMap" 
+  [ngClass]="{'fadeOut': arrowFade, 'fadeIn': !arrowFade }" 
+  class="fadeInArrow arrow">
   </div>
+

@@ -19,6 +19,7 @@ import { VideoComponent } from './main/video/video.component';
 import { SubscribeComponent } from './main/subscribe/subscribe.component';
 import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.component';
 import { WhatIsFirebonesComponent } from './main/what-is-firebones/what-is-firebones.component';
+import { NarrativeComponent } from './main//narrative/narrative.component';
 
 
 
@@ -34,7 +35,8 @@ import { WhatIsFirebonesComponent } from './main/what-is-firebones/what-is-fireb
     VideoComponent,
     SubscribeComponent,
     StickyTopLogoComponent,
-    WhatIsFirebonesComponent
+    WhatIsFirebonesComponent,
+    NarrativeComponent
   ],
   imports: [
     BrowserModule,
