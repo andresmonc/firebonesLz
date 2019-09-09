@@ -1,64 +1,65 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { Inject } from "@angular/core";
-import { DOCUMENT } from "@angular/platform-browser";
-import { WINDOW } from "../../services/window.service";
-import { ScrollToAnimationEasing, ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
-
-
+import { Component, OnInit, HostListener, ElementRef} from '@angular/core';
+import { debounce } from "../../decoraters";
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
+  animations: [
+    trigger('fadeUpUp', [
+      state('show', style({
+        opacity: 1,
+        transform: "none"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translate3d(0, 100%, 0)"
+      })),
+      transition('show => hide', animate('400ms ease-out')),
+      transition('hide => show', animate('400ms ease-in'))
+    ]),
+    trigger('fadeIn', [
+      state('show', style({
+        opacity: 1,
+      })),
+      state('hide',   style({
+        opacity: 0,
+      })),
+      transition('show => hide', animate('600ms ease-out')),
+      transition('hide => show', animate('600ms ease-in'))
+    ])
+  ]
 })
 export class AboutComponent implements OnInit {
 
-  public arrowFade: boolean = false;
-
-  public ngxScrollToDestination: string;
-  public ngxScrollToDuration: number;
-  public ngxScrollToEasing: ScrollToAnimationEasing;
-  public ngxScrollToOffset: number;
-  public ngxScrollToOffsetMap: ScrollToOffsetMap;
-
-  private arrowFadepoint: number;
+  state = 'hide'
 
   constructor(
-    @Inject(DOCUMENT) private document: Document,
-    @Inject(WINDOW) private window: Window
-  ) {
+    public el: ElementRef
+  ) {}
 
-    this.ngxScrollToDuration = 0;
-
-    this.ngxScrollToOffsetMap = new Map();
-    this.ngxScrollToOffsetMap
-      .set(320, -200)
-      .set(480, -250)
-      .set(768, -300)
-      .set(1240, -300)
-      .set(1920, -300)
-
-
-   }
 
   ngOnInit() {
-    this.arrowFadepoint = 20    
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-
-    let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
-    if (number >= this.arrowFadepoint) {
-      this.arrowFade = true;
+  @HostListener("window:scroll", ['$event'])
+  checkScroll() {
+    const componentPosition = this.el.nativeElement.offsetTop - 500
+    const scrollPosition = window.pageYOffset
+    console.log(componentPosition)
+    if (scrollPosition >= componentPosition) {
+      this.state = 'show'
+    } else {
+      this.state = 'hide'
     }
-    else {
-      this.arrowFade = false;
-    }
-
   }
 
-
-  
 
 }

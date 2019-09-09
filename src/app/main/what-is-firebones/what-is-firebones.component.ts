@@ -1,55 +1,47 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { Inject } from "@angular/core";
-import { DOCUMENT } from "@angular/platform-browser";
-import { WINDOW } from "../../services/window.service";
-import { ScrollToAnimationEasing, ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
+
 
 @Component({
   selector: 'app-what-is-firebones',
   templateUrl: './what-is-firebones.component.html',
-  styleUrls: ['./what-is-firebones.component.scss']
+  styleUrls: ['./what-is-firebones.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      state('show', style({
+        opacity: 1,
+      })),
+      state('hide',   style({
+        opacity: 0,
+      })),
+      transition('show => hide', animate('600ms ease-out')),
+      transition('hide => show', animate('600ms ease-in'))
+    ])
+  ]
 })
 export class WhatIsFirebonesComponent implements OnInit {
-  private whatIsGoShowPoint: number;
-  public whatIsGoShowFade: boolean = false;
-  public ngxScrollToDestination: string;
-  public ngxScrollToDuration: number;
-  public ngxScrollToEasing: ScrollToAnimationEasing;
-  public ngxScrollToOffset: number;
-  public ngxScrollToOffsetMap: ScrollToOffsetMap;
+  state = 'hide'
 
-  constructor(
-    @Inject(DOCUMENT) private document: Document,
-    @Inject(WINDOW) private window: Window
-  ){
-
-    this.ngxScrollToDuration = 0;
-
-    this.ngxScrollToOffsetMap = new Map();
-    this.ngxScrollToOffsetMap
-      .set(320, -200)
-      .set(480, -250)
-      .set(768, -300)
-      .set(1240, -300)
-      .set(1920, -300)
-
-   }
+  constructor( public el: ElementRef ){}
 
   ngOnInit() {
-    this.whatIsGoShowPoint = 30    
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-
-
-    let number = this.window.pageYOffset || this.document.documentElement.offsetTop || this.document.body.scrollTop || 0;
-    if (number >= this.whatIsGoShowPoint) {
-      console.log("its truez")
-      this.whatIsGoShowFade = true;
+  @HostListener("window:scroll", ['$event'])
+  checkScroll() {
+    const componentPosition = this.el.nativeElement.offsetTop - 800
+    const scrollPosition = window.pageYOffset
+    if (scrollPosition >= componentPosition) {
+      this.state = 'show'
+    } else {
+      this.state = 'hide'
     }
-
   }
-
 
 }

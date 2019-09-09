@@ -1,22 +1,14 @@
 <div id="about">
-
-  <h2 class="first" id="firstEver">The World’s First-Ever Go-Show!</h2>
-
-  <h2 class="second" id="probablyWondering">You’re probably wondering … </h2>
-
-  <h2 class="third" id="whatIsGo">
-    <i>What is a </i>
-    <b>go-show</b>
-    <i>?</i>
-  </h2>
-
-</div>
-
-  <div 
-  [ngx-scroll-to]="'whatIsFireBones'" 
-  [ngx-scroll-to-duration]="ngxScrollToDuration" 
-  [ngx-scroll-to-offset-map]="ngxScrollToOffsetMap" 
-  [ngClass]="{'fadeOut': arrowFade, 'fadeIn': !arrowFade }" 
-  class="fadeInArrow arrow">
+    <div [@fadeUpUp]="state" class="biplaneDiv">
+        <img class="biplane" src="assets/biplane02-01.svg">
+    </div>
+  <div class="aboutText">
+      <p class="helloWorld">hello world</p>
+      <h2 [@fadeIn]="state" id="probablyWondering">You’re probably wondering … </h2>
+      <h2 [@fadeIn]="state" id="whatIsGo">
+        <i>What is a </i>
+        <b>go-show</b>
+        <i>?</i>
+      </h2>
   </div>
-
+</div>

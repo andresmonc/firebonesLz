@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,8 @@ import { SubscribeComponent } from './main/subscribe/subscribe.component';
 import { StickyTopLogoComponent } from './main/sticky-top-logo/sticky-top-logo.component';
 import { WhatIsFirebonesComponent } from './main/what-is-firebones/what-is-firebones.component';
 import { NarrativeComponent } from './main//narrative/narrative.component';
+import { PromoVideoComponent } from './main/promo-video/promo-video.component';
+import { SplashVideoComponent } from './main/splash-video/splash-video.component';
 
 
 
@@ -36,7 +40,9 @@ import { NarrativeComponent } from './main//narrative/narrative.component';
     SubscribeComponent,
     StickyTopLogoComponent,
     WhatIsFirebonesComponent,
-    NarrativeComponent
+    NarrativeComponent,
+    PromoVideoComponent,
+    SplashVideoComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +50,7 @@ import { NarrativeComponent } from './main//narrative/narrative.component';
     HttpModule, 
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     ScrollToModule.forRoot(),
     NgsRevealModule.forRoot()
   ],
