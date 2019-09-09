@@ -1,67 +1,24 @@
-<div id="whatIsFireBones" class="itemset" ngsRevealSet [ngsInterval]="50" [ngsSelector]="'.item'">
-
-  <a class="anchor" id="whatIsAnchor"></a>
-
-  <div class="" *ngIf="whatIsGoShowFade">
-
-    <h2 class="first" id="whatIsFire">
-      <i> What is </i>
-      <b id="fireBones">Go-Show</b>
-      <i> ? </i>
-    </h2>
-
-    <h2 class="second" id="whatIsFire">
-      <p>
-        Do you crave a captivating podcast?
-      </p>
-    </h2>
-
-    <h2 class="third" id="whatIsFire">
-        <p>
-            Do you need some beautiful video in your life?
-        </p>
-      </h2>
-
-      <h2 class="fourth" id="whatIsFire">
-          <p>
-              If so, you’re in luck!
-          </p>
-        </h2>
-
-        <h2 class="fifth" id="whatIsFire">
+<div id="whatIsFireBones">
+    <div [@fadeIn]="state" class="maskDiv" >
+        <img class="biplane" src="assets/amramask-04.svg">
+    </div>
+    <div [@fadeIn]="state" class="whatIsTextDiv">
+        <h2 class="first" id="whatIsFire">
             <p>
-                Packaged in a digital app for mobile devices,
-                a new form known as the <b>
-                    go-show
-                </b>combines videos
-                and podcasts to tell one fascinating story.  
+              Do you crave a captivating podcast?
             </p>
           </h2>
-
-
-  </div>
-
-
-
-  <!-- <p class="item item2" id="goShowExplanation">
-    Do you crave a captivating podcast?
-    Do you need some beautiful video in your life?
-    If so, you’re in luck!
-    Packaged in a digital app for mobile devices,
-    a new form known as the go-show combines videos
-    and podcasts to tell one fascinating story.  
-    </p> 
-     -->
-
-     <div *ngIf="whatIsGoShowFade"
-[ngx-scroll-to]="'fireBonesNarrative'" 
-[ngx-scroll-to-duration]="ngxScrollToDuration" 
-[ngx-scroll-to-offset-map]="ngxScrollToOffsetMap" 
-class="fadeInArrow arrow2">
-
-
+      
+          <h2 class="second" id="whatIsFire">
+            <p>
+              Do you need some beautiful video in your life?
+            </p>
+          </h2>
+      
+          <h2 class="third" id="whatIsFire">
+            <p>
+              If so, you’re in luck!
+            </p>
+          </h2>
+    </div>
 </div>
-
-</div>
-
-

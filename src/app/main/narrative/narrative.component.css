@@ -8,7 +8,7 @@
     margin-right: var(--margin-right);
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    margin-top: var(--about-2-margin-top);
+    margin-top: 5%;
 }
 
 #whatIsFire {
@@ -30,17 +30,21 @@
     font-weight: 900;
 }
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -280px;
-    ;
-    visibility: hidden;
-}
+.biplaneDiv{
+    transform: scale(.45);
+  }
 
-@media only screen and (max-width: 579px) {
-    a.anchor {
-        top: -200px;
+
+
+
+  @media only screen and (max-width: 825px) {
+    img{
+        width: 100%;
+      }
+    .biplaneDiv{
+        display: inline-block;
+        transform: scale(.6);
     }
+  }
+  
 
-}

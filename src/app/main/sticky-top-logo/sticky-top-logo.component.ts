@@ -47,7 +47,7 @@ export class StickyTopLogoComponent implements OnInit {
         this.document.getElementById("navbar").style.padding = "10px 10px";
         this.document.getElementById("navbar").style.top = "0";
         this.document.getElementById("navbar").style.backgroundColor = "#f1f1f100";
-        this.document.getElementById("navbar").style.color = "black";
+        this.document.getElementById("navbar").style.color = "white";
         this.document.getElementById("logo").style.height = "auto";
         this.document.getElementById("logo").style.width = "120px";
         this.document.getElementById("logo").style.webkitTransition = "all .5s ease";
@@ -78,7 +78,7 @@ export class StickyTopLogoComponent implements OnInit {
         this.document.getElementById("navbar").style.padding = "10px 10px";
         this.document.getElementById("navbar").style.top = "0";
         this.document.getElementById("navbar").style.backgroundColor = "#f1f1f100";
-        this.document.getElementById("navbar").style.color = "black";
+        this.document.getElementById("navbar").style.color = "white";
         this.document.getElementById("logo").style.height = "auto";
         this.document.getElementById("logo").style.width = "165px";
         this.document.getElementById("logo").style.webkitTransition = "all .5s ease";
@@ -110,7 +110,7 @@ export class StickyTopLogoComponent implements OnInit {
         this.document.getElementById("navbar").style.padding = "10px 10px";
         this.document.getElementById("navbar").style.top = "0";
         this.document.getElementById("navbar").style.backgroundColor = "#f1f1f100";
-        this.document.getElementById("navbar").style.color = "black";
+        this.document.getElementById("navbar").style.color = "white";
         this.document.getElementById("logo").style.height = "auto";
         this.document.getElementById("logo").style.width = "auto";
         this.document.getElementById("logo").style.webkitTransition = "all .5s ease";

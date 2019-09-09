@@ -1,0 +1,19 @@
+<body>
+    <div class="video-containerz">
+      <div class="overlay"></div>
+      <div class="video-chrome-fix" [innerHTML]="videoTag"></div>
+    </div>
+</body>
+
+
+  <div class="child">The World’s First-Ever Go-Show.</div>
+
+
+  <div 
+  [ngx-scroll-to]="'about'" 
+  [ngx-scroll-to-duration]="ngxScrollToDuration" 
+  [ngx-scroll-to-offset-map]="ngxScrollToOffsetMap" 
+  [ngClass]="{'fadeOut': arrowFade, 'fadeIn': !arrowFade }" 
+  class="fas fa-chevron-down fa-3x arrow bounce">
+  </div>
+

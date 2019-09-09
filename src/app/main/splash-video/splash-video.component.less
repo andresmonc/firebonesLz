@@ -1,0 +1,48 @@
+
+body {
+    background-color:black;
+    height:100vh;
+}
+
+.child {
+    opacity: 0; 
+    animation: fadeInUp 1s ease-in-out 0s forwards;
+    position: absolute;
+    width:100%;
+    top:46%;
+    text-align:center;
+    color: #ffffff;
+    text-rendering: optimizeLegibility;
+    font-size: 72px; 
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+
+.arrow {
+    color:white;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+    transition: all .3s ease;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@media only screen and (max-width: 925px) {
+    .child {
+        font-size: 42px; 
+    }
+}
+
+  @media only screen and (max-width: 500px) {
+    .child {
+        font-size: 24px; 
+    }
+}
+  
+
+  
