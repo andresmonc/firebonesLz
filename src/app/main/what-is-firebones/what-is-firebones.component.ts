@@ -35,7 +35,7 @@ export class WhatIsFirebonesComponent implements OnInit {
 
   @HostListener("window:scroll", ['$event'])
   checkScroll() {
-    const componentPosition = this.el.nativeElement.offsetTop - 800
+    const componentPosition = this.el.nativeElement.offsetTop - 500
     const scrollPosition = window.pageYOffset
     if (scrollPosition >= componentPosition) {
       this.state = 'show'

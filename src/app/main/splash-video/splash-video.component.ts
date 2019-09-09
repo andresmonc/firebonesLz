@@ -44,10 +44,10 @@ export class SplashVideoComponent implements OnInit {
 
   private getVideoTag() {
     return this.sanitizer.bypassSecurityTrustHtml(
-      `    <video preload="auto" autoplay muted loop id="myVideo" #myVideo>
+    `<video preload="auto" autoplay muted loop playsinline id="myVideo" #myVideo>
         <source src="https://firebones-lz.s3-us-west-1.amazonaws.com/firebonesSplashVid.mp4" type="video/mp4">
-        <source src=" https://d16tvh09ko4c53.cloudfront.net/splashVid.webm" type="video/webm">
-        <source src=" https://d16tvh09ko4c53.cloudfront.net/firebonesSplashVid.ogv" type="video/ogv">
+        <source src="https://firebones-lz.s3-us-west-1.amazonaws.com/firebonesSplashVid.webm" type="video/webm">
+        <source src="https://firebones-lz.s3-us-west-1.amazonaws.com//firebonesSplashVid.ogv" type="video/ogv">
         Browser not supported
       </video>`
     );

@@ -36,8 +36,7 @@ html {
 
 
 .video-containerz {
-  transform: scale(1.1);
-
+  transform: scale(1);
   filter: blur(8px);
   -webkit-filter: blur(8px);
 	position: absolute;
@@ -89,6 +88,7 @@ html {
 		/* Make video to at least 100% wide and tall */
 		min-width: 100%; 
     min-height: 100%; 
+    margin: -5px -10px -10px -5px;
     
 		/* Setting width & height to auto prevents the browser from stretching or squishing the video */
 		width: 100%;
